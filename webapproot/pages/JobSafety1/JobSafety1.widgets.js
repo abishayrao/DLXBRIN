@@ -166,15 +166,15 @@ JobSafety1.widgets = {
 											binding: ["wm.Binding", {}, {}, {
 												wire: ["wm.Wire", {"expression":undefined,"source":"gesggruposDojoGrid.selectedItem","targetProperty":"dataSet"}, {}]
 											}],
-											gesggrpNomeEditor1: ["wm.Text", {"caption":"Name","captionSize":"140px","changeOnKey":true,"dataValue":"","desktopHeight":"26px","emptyValue":"emptyString","formField":"gesggrpNome","height":"26px","readonly":true,"required":true,"width":"90%"}, {}],
-											radioSet1: ["wm.RadioSet", {"caption":"Situation","captionSize":"140px","dataField":"filter","dataType":"com.testdb.data.Selectionandordering","dataValue":undefined,"desktopHeight":"60px","displayField":"preview","editorBorder":false,"formField":"gesggrpStatus","height":"60px","readonly":true,"width":"90%"}, {}, {
+											gesggrpNomeEditor1: ["wm.Text", {"caption":"Name","captionSize":"140px","changeOnKey":true,"dataValue":"GIS","desktopHeight":"26px","emptyValue":"emptyString","formField":"gesggrpNome","height":"26px","readonly":true,"required":true,"width":"90%"}, {}],
+											radioSet1: ["wm.RadioSet", {"caption":"Situation","captionSize":"140px","dataField":"filter","dataType":"com.testdb.data.Selectionandordering","dataValue":"A","desktopHeight":"60px","displayField":"preview","editorBorder":false,"formField":"gesggrpStatus","height":"60px","readonly":true,"width":"90%"}, {}, {
 												binding: ["wm.Binding", {}, {}, {
 													wire: ["wm.Wire", {"expression":undefined,"source":"selectionandordering","targetProperty":"dataSet"}, {}]
 												}]
 											}],
-											gesggrpIniVigEditor1: ["wm.DateTime", {"caption":"Valid From","captionSize":"140px","dateMode":"Date","desktopHeight":"26px","emptyValue":"zero","formField":"gesggrpIniVig","height":"26px","readonly":true,"width":"90%"}, {}],
+											gesggrpIniVigEditor1: ["wm.DateTime", {"caption":"Valid From","captionSize":"140px","dataValue":1361406600000,"dateMode":"Date","desktopHeight":"26px","emptyValue":"zero","formField":"gesggrpIniVig","height":"26px","readonly":true,"width":"90%"}, {}],
 											gesggrpFimVigEditor1: ["wm.DateTime", {"caption":"Valid To","captionSize":"140px","dateMode":"Date","desktopHeight":"26px","emptyValue":"zero","formField":"gesggrpFimVig","height":"26px","readonly":true,"width":"90%"}, {}],
-											siClientesLookup1: ["wm.Lookup", {"caption":"Client ID","captionSize":"140px","dataType":"com.testdb.data.SiClientes","dataValue":undefined,"defaultInsert":"NV","displayField":"siclinomepq","emptyValue":undefined,"formField":"siClientes","readonly":true,"required":true,"width":"90%"}, {}],
+											siClientesLookup1: ["wm.Lookup", {"caption":"Client ID","captionSize":"140px","dataType":"com.testdb.data.SiClientes","dataValue":{"siclipfpj":"L","siclifimvig":null,"siclicod":"LEGAL","siclilingua":"EN","siclinomegr":"NOVARTIS","sicliindicacao":1,"siclistatus":"A","siclinomepq":"NV","sicliinivig":1361385000000,"sicliid":1},"defaultInsert":"NV","displayField":"siclinomepq","emptyValue":undefined,"formField":"siClientes","readonly":true,"required":true,"width":"90%"}, {}],
 											gesggruposLiveForm1EditPanel: ["wm.EditPanel", {"desktopHeight":"32px","height":"32px","liveForm":"gesggruposLiveForm1","operationPanel":"operationPanel1","savePanel":"savePanel1"}, {}, {
 												savePanel1: ["wm.Panel", {"height":"100%","horizontalAlign":"right","layoutKind":"left-to-right","showing":false,"verticalAlign":"top","width":"100%"}, {}, {
 													saveButton1: ["wm.Button", {"caption":"Save","height":"100%","margin":"4"}, {"onclick":"gesggruposLiveForm1EditPanel.saveData"}, {
