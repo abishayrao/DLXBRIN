@@ -9,5 +9,3 @@ webapproot/WEB-INF/lib/*
 phonegap/
 export/
 dist/
-file_map_readme.txt
-.wmproject.properties
