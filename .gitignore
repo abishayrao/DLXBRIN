@@ -1,0 +1,11 @@
+.DS_Store
+*.class
+*#*
+*~
+${HRHost}.xml
+webapproot/timestamp.txt
+webapproot/WEB-INF/classes/*
+webapproot/WEB-INF/lib/*
+phonegap/
+export/
+dist/
