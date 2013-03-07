@@ -23,29 +23,17 @@
         <many-to-one name="siClientes" class="com.testdb.data.SiClientes">
             <column name="GEUFCLIENTEID" not-null="true"/>
         </many-to-one>
-        <set name="stEpFabricEnds" inverse="true" cascade="">
+        <set name="geTbMunicipioses" inverse="true" cascade="">
             <key>
-                <column name="STFAENDUFID"/>
+                <column name="GEMUNICUF" not-null="true"/>
             </key>
-            <one-to-many class="com.testdb.data.StEpFabricEnd"/>
+            <one-to-many class="com.testdb.data.GeTbMunicipios"/>
         </set>
-        <set name="geCaEmpSociosesForGeempsorguf" inverse="true" cascade="">
+        <set name="geCaEmpEnds" inverse="true" cascade="">
             <key>
-                <column name="GEEMPSORGUF"/>
+                <column name="GEEMPENDUF"/>
             </key>
-            <one-to-many class="com.testdb.data.GeCaEmpSocios"/>
-        </set>
-        <set name="geCaEmpLotacaos" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPLOTUF"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpLotacao"/>
-        </set>
-        <set name="geCaEmpDocsPfsForGeempdpfregprofuf" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPDPFREGPROFUF"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpDocsPf"/>
+            <one-to-many class="com.testdb.data.GeCaEmpEnd"/>
         </set>
         <set name="siCliEnds" inverse="true" cascade="">
             <key>
@@ -53,23 +41,11 @@
             </key>
             <one-to-many class="com.testdb.data.SiCliEnd"/>
         </set>
-        <set name="geCaEmpSociosesForGeempsouf" inverse="true" cascade="">
+        <set name="geCaEmpDocsPfsForGeempdpfregprofuf" inverse="true" cascade="">
             <key>
-                <column name="GEEMPSOUF"/>
+                <column name="GEEMPDPFREGPROFUF"/>
             </key>
-            <one-to-many class="com.testdb.data.GeCaEmpSocios"/>
-        </set>
-        <set name="siCliDocsPfs" inverse="true" cascade="">
-            <key>
-                <column name="SICLIDPFRGUF"/>
-            </key>
-            <one-to-many class="com.testdb.data.SiCliDocsPf"/>
-        </set>
-        <set name="geTbMunicipioses" inverse="true" cascade="">
-            <key>
-                <column name="GEMUNICUF" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeTbMunicipios"/>
+            <one-to-many class="com.testdb.data.GeCaEmpDocsPf"/>
         </set>
         <set name="geCaEmpDocsPfsForGeempdpfrguf" inverse="true" cascade="">
             <key>
@@ -77,11 +53,35 @@
             </key>
             <one-to-many class="com.testdb.data.GeCaEmpDocsPf"/>
         </set>
-        <set name="geCaEmpEnds" inverse="true" cascade="">
+        <set name="geCaEmpLotacaos" inverse="true" cascade="">
             <key>
-                <column name="GEEMPENDUF"/>
+                <column name="GEEMPLOTUF"/>
             </key>
-            <one-to-many class="com.testdb.data.GeCaEmpEnd"/>
+            <one-to-many class="com.testdb.data.GeCaEmpLotacao"/>
+        </set>
+        <set name="stEpFabricEnds" inverse="true" cascade="">
+            <key>
+                <column name="STFAENDUFID"/>
+            </key>
+            <one-to-many class="com.testdb.data.StEpFabricEnd"/>
+        </set>
+        <set name="siCliDocsPfs" inverse="true" cascade="">
+            <key>
+                <column name="SICLIDPFRGUF"/>
+            </key>
+            <one-to-many class="com.testdb.data.SiCliDocsPf"/>
+        </set>
+        <set name="geCaEmpSociosesForGeempsouf" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPSOUF"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpSocios"/>
+        </set>
+        <set name="geCaEmpSociosesForGeempsorguf" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPSORGUF"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpSocios"/>
         </set>
     </class>
 </hibernate-mapping>

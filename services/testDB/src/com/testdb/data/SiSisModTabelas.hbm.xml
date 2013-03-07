@@ -35,17 +35,17 @@
         <many-to-one name="siSisModulo" class="com.testdb.data.SiSisModulo">
             <column name="SISMTIDMODULO" not-null="true"/>
         </many-to-one>
-        <set name="siSisModTabIndexes" inverse="true" cascade="">
-            <key>
-                <column name="SISMTIIDTABELA" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.SiSisModTabIndex"/>
-        </set>
         <set name="siSisModTabCamposes" inverse="true" cascade="">
             <key>
                 <column name="SISMTCIDTABELA" not-null="true"/>
             </key>
             <one-to-many class="com.testdb.data.SiSisModTabCampos"/>
+        </set>
+        <set name="siSisModTabIndexes" inverse="true" cascade="">
+            <key>
+                <column name="SISMTIIDTABELA" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.SiSisModTabIndex"/>
         </set>
     </class>
 </hibernate-mapping>

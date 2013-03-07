@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeTbTiposTelefone
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeTbTiposTelefone {
@@ -20,16 +20,16 @@ public class GeTbTiposTelefone {
     private String getipotelstatus;
     private Date getipotelinivig;
     private Date getipotelfimvig;
-    private Set<com.testdb.data.StEpFabricContatos> stEpFabricContatosesForStfacontelatpid = new HashSet<com.testdb.data.StEpFabricContatos>();
+    private Set<com.testdb.data.SiCliContatos> siCliContatosesForSiclicontelatpid = new HashSet<com.testdb.data.SiCliContatos>();
+    private Set<com.testdb.data.GeCaEmpContatos> geCaEmpContatosesForGeempcontelbtpid = new HashSet<com.testdb.data.GeCaEmpContatos>();
+    private Set<com.testdb.data.SiCliTel> siCliTels = new HashSet<com.testdb.data.SiCliTel>();
+    private Set<com.testdb.data.GeCaEmpContatos> geCaEmpContatosesForGeempcontelatpid = new HashSet<com.testdb.data.GeCaEmpContatos>();
     private Set<com.testdb.data.SiCliContatos> siCliContatosesForSiclicontelbtpid = new HashSet<com.testdb.data.SiCliContatos>();
+    private Set<com.testdb.data.StEpFabricContatos> stEpFabricContatosesForStfacontelatpid = new HashSet<com.testdb.data.StEpFabricContatos>();
+    private Set<com.testdb.data.StEpFabricTel> stEpFabricTels = new HashSet<com.testdb.data.StEpFabricTel>();
+    private Set<com.testdb.data.GeCaEmpTel> geCaEmpTels = new HashSet<com.testdb.data.GeCaEmpTel>();
     private Set<com.testdb.data.StEpFabricWeb> stEpFabricWebs = new HashSet<com.testdb.data.StEpFabricWeb>();
     private Set<com.testdb.data.StEpFabricContatos> stEpFabricContatosesForStfacontelbtpid = new HashSet<com.testdb.data.StEpFabricContatos>();
-    private Set<com.testdb.data.GeCaEmpContatos> geCaEmpContatosesForGeempcontelbtpid = new HashSet<com.testdb.data.GeCaEmpContatos>();
-    private Set<com.testdb.data.StEpFabricTel> stEpFabricTels = new HashSet<com.testdb.data.StEpFabricTel>();
-    private Set<com.testdb.data.SiCliContatos> siCliContatosesForSiclicontelatpid = new HashSet<com.testdb.data.SiCliContatos>();
-    private Set<com.testdb.data.GeCaEmpContatos> geCaEmpContatosesForGeempcontelatpid = new HashSet<com.testdb.data.GeCaEmpContatos>();
-    private Set<com.testdb.data.SiCliTel> siCliTels = new HashSet<com.testdb.data.SiCliTel>();
-    private Set<com.testdb.data.GeCaEmpTel> geCaEmpTels = new HashSet<com.testdb.data.GeCaEmpTel>();
 
     public Integer getGetipotelid() {
         return getipotelid;
@@ -87,12 +87,36 @@ public class GeTbTiposTelefone {
         this.getipotelfimvig = getipotelfimvig;
     }
 
-    public Set<com.testdb.data.StEpFabricContatos> getStEpFabricContatosesForStfacontelatpid() {
-        return stEpFabricContatosesForStfacontelatpid;
+    public Set<com.testdb.data.SiCliContatos> getSiCliContatosesForSiclicontelatpid() {
+        return siCliContatosesForSiclicontelatpid;
     }
 
-    public void setStEpFabricContatosesForStfacontelatpid(Set<com.testdb.data.StEpFabricContatos> stEpFabricContatosesForStfacontelatpid) {
-        this.stEpFabricContatosesForStfacontelatpid = stEpFabricContatosesForStfacontelatpid;
+    public void setSiCliContatosesForSiclicontelatpid(Set<com.testdb.data.SiCliContatos> siCliContatosesForSiclicontelatpid) {
+        this.siCliContatosesForSiclicontelatpid = siCliContatosesForSiclicontelatpid;
+    }
+
+    public Set<com.testdb.data.GeCaEmpContatos> getGeCaEmpContatosesForGeempcontelbtpid() {
+        return geCaEmpContatosesForGeempcontelbtpid;
+    }
+
+    public void setGeCaEmpContatosesForGeempcontelbtpid(Set<com.testdb.data.GeCaEmpContatos> geCaEmpContatosesForGeempcontelbtpid) {
+        this.geCaEmpContatosesForGeempcontelbtpid = geCaEmpContatosesForGeempcontelbtpid;
+    }
+
+    public Set<com.testdb.data.SiCliTel> getSiCliTels() {
+        return siCliTels;
+    }
+
+    public void setSiCliTels(Set<com.testdb.data.SiCliTel> siCliTels) {
+        this.siCliTels = siCliTels;
+    }
+
+    public Set<com.testdb.data.GeCaEmpContatos> getGeCaEmpContatosesForGeempcontelatpid() {
+        return geCaEmpContatosesForGeempcontelatpid;
+    }
+
+    public void setGeCaEmpContatosesForGeempcontelatpid(Set<com.testdb.data.GeCaEmpContatos> geCaEmpContatosesForGeempcontelatpid) {
+        this.geCaEmpContatosesForGeempcontelatpid = geCaEmpContatosesForGeempcontelatpid;
     }
 
     public Set<com.testdb.data.SiCliContatos> getSiCliContatosesForSiclicontelbtpid() {
@@ -101,6 +125,30 @@ public class GeTbTiposTelefone {
 
     public void setSiCliContatosesForSiclicontelbtpid(Set<com.testdb.data.SiCliContatos> siCliContatosesForSiclicontelbtpid) {
         this.siCliContatosesForSiclicontelbtpid = siCliContatosesForSiclicontelbtpid;
+    }
+
+    public Set<com.testdb.data.StEpFabricContatos> getStEpFabricContatosesForStfacontelatpid() {
+        return stEpFabricContatosesForStfacontelatpid;
+    }
+
+    public void setStEpFabricContatosesForStfacontelatpid(Set<com.testdb.data.StEpFabricContatos> stEpFabricContatosesForStfacontelatpid) {
+        this.stEpFabricContatosesForStfacontelatpid = stEpFabricContatosesForStfacontelatpid;
+    }
+
+    public Set<com.testdb.data.StEpFabricTel> getStEpFabricTels() {
+        return stEpFabricTels;
+    }
+
+    public void setStEpFabricTels(Set<com.testdb.data.StEpFabricTel> stEpFabricTels) {
+        this.stEpFabricTels = stEpFabricTels;
+    }
+
+    public Set<com.testdb.data.GeCaEmpTel> getGeCaEmpTels() {
+        return geCaEmpTels;
+    }
+
+    public void setGeCaEmpTels(Set<com.testdb.data.GeCaEmpTel> geCaEmpTels) {
+        this.geCaEmpTels = geCaEmpTels;
     }
 
     public Set<com.testdb.data.StEpFabricWeb> getStEpFabricWebs() {
@@ -117,54 +165,6 @@ public class GeTbTiposTelefone {
 
     public void setStEpFabricContatosesForStfacontelbtpid(Set<com.testdb.data.StEpFabricContatos> stEpFabricContatosesForStfacontelbtpid) {
         this.stEpFabricContatosesForStfacontelbtpid = stEpFabricContatosesForStfacontelbtpid;
-    }
-
-    public Set<com.testdb.data.GeCaEmpContatos> getGeCaEmpContatosesForGeempcontelbtpid() {
-        return geCaEmpContatosesForGeempcontelbtpid;
-    }
-
-    public void setGeCaEmpContatosesForGeempcontelbtpid(Set<com.testdb.data.GeCaEmpContatos> geCaEmpContatosesForGeempcontelbtpid) {
-        this.geCaEmpContatosesForGeempcontelbtpid = geCaEmpContatosesForGeempcontelbtpid;
-    }
-
-    public Set<com.testdb.data.StEpFabricTel> getStEpFabricTels() {
-        return stEpFabricTels;
-    }
-
-    public void setStEpFabricTels(Set<com.testdb.data.StEpFabricTel> stEpFabricTels) {
-        this.stEpFabricTels = stEpFabricTels;
-    }
-
-    public Set<com.testdb.data.SiCliContatos> getSiCliContatosesForSiclicontelatpid() {
-        return siCliContatosesForSiclicontelatpid;
-    }
-
-    public void setSiCliContatosesForSiclicontelatpid(Set<com.testdb.data.SiCliContatos> siCliContatosesForSiclicontelatpid) {
-        this.siCliContatosesForSiclicontelatpid = siCliContatosesForSiclicontelatpid;
-    }
-
-    public Set<com.testdb.data.GeCaEmpContatos> getGeCaEmpContatosesForGeempcontelatpid() {
-        return geCaEmpContatosesForGeempcontelatpid;
-    }
-
-    public void setGeCaEmpContatosesForGeempcontelatpid(Set<com.testdb.data.GeCaEmpContatos> geCaEmpContatosesForGeempcontelatpid) {
-        this.geCaEmpContatosesForGeempcontelatpid = geCaEmpContatosesForGeempcontelatpid;
-    }
-
-    public Set<com.testdb.data.SiCliTel> getSiCliTels() {
-        return siCliTels;
-    }
-
-    public void setSiCliTels(Set<com.testdb.data.SiCliTel> siCliTels) {
-        this.siCliTels = siCliTels;
-    }
-
-    public Set<com.testdb.data.GeCaEmpTel> getGeCaEmpTels() {
-        return geCaEmpTels;
-    }
-
-    public void setGeCaEmpTels(Set<com.testdb.data.GeCaEmpTel> geCaEmpTels) {
-        this.geCaEmpTels = geCaEmpTels;
     }
 
 }

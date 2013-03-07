@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeCaEmpresas
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeCaEmpresas {
@@ -25,20 +25,20 @@ public class GeCaEmpresas {
     private Date gecaempfimvig;
     private String gecaempusafilial;
     private String gecaempusacc;
+    private Set<com.testdb.data.GeCaEmpCentrocusto> geCaEmpCentrocustos = new HashSet<com.testdb.data.GeCaEmpCentrocusto>();
+    private Set<com.testdb.data.GeCaEmpEnd> geCaEmpEnds = new HashSet<com.testdb.data.GeCaEmpEnd>();
+    private Set<com.testdb.data.GeCaEmpHisPgto> geCaEmpHisPgtos = new HashSet<com.testdb.data.GeCaEmpHisPgto>();
+    private Set<com.testdb.data.GeCaEmpLotacao> geCaEmpLotacaos = new HashSet<com.testdb.data.GeCaEmpLotacao>();
+    private Set<com.testdb.data.GeCaEmpCnaeSec> geCaEmpCnaeSecs = new HashSet<com.testdb.data.GeCaEmpCnaeSec>();
+    private Set<com.testdb.data.GeCaEmpSocios> geCaEmpSocioses = new HashSet<com.testdb.data.GeCaEmpSocios>();
+    private Set<com.testdb.data.GeCaFuncionario> geCaFuncionarios = new HashSet<com.testdb.data.GeCaFuncionario>();
+    private Set<com.testdb.data.GeCaEmpTel> geCaEmpTels = new HashSet<com.testdb.data.GeCaEmpTel>();
+    private Set<com.testdb.data.GeCaEmpDocsPj> geCaEmpDocsPjs = new HashSet<com.testdb.data.GeCaEmpDocsPj>();
+    private Set<com.testdb.data.GeCaEmpDocsPf> geCaEmpDocsPfs = new HashSet<com.testdb.data.GeCaEmpDocsPf>();
     private Set<com.testdb.data.GeSgGruXEmpresa> geSgGruXEmpresas = new HashSet<com.testdb.data.GeSgGruXEmpresa>();
     private Set<com.testdb.data.GeCaEmpContas> geCaEmpContases = new HashSet<com.testdb.data.GeCaEmpContas>();
-    private Set<com.testdb.data.GeCaFuncionario> geCaFuncionarios = new HashSet<com.testdb.data.GeCaFuncionario>();
-    private Set<com.testdb.data.GeCaEmpCnaeSec> geCaEmpCnaeSecs = new HashSet<com.testdb.data.GeCaEmpCnaeSec>();
-    private Set<com.testdb.data.GeCaEmpLotacao> geCaEmpLotacaos = new HashSet<com.testdb.data.GeCaEmpLotacao>();
-    private Set<com.testdb.data.GeCaEmpCentrocusto> geCaEmpCentrocustos = new HashSet<com.testdb.data.GeCaEmpCentrocusto>();
-    private Set<com.testdb.data.GeCaEmpWeb> geCaEmpWebs = new HashSet<com.testdb.data.GeCaEmpWeb>();
-    private Set<com.testdb.data.GeCaEmpEnd> geCaEmpEnds = new HashSet<com.testdb.data.GeCaEmpEnd>();
-    private Set<com.testdb.data.GeCaEmpDocsPf> geCaEmpDocsPfs = new HashSet<com.testdb.data.GeCaEmpDocsPf>();
-    private Set<com.testdb.data.GeCaEmpSocios> geCaEmpSocioses = new HashSet<com.testdb.data.GeCaEmpSocios>();
     private Set<com.testdb.data.GeCaEmpContatos> geCaEmpContatoses = new HashSet<com.testdb.data.GeCaEmpContatos>();
-    private Set<com.testdb.data.GeCaEmpDocsPj> geCaEmpDocsPjs = new HashSet<com.testdb.data.GeCaEmpDocsPj>();
-    private Set<com.testdb.data.GeCaEmpTel> geCaEmpTels = new HashSet<com.testdb.data.GeCaEmpTel>();
-    private Set<com.testdb.data.GeCaEmpHisPgto> geCaEmpHisPgtos = new HashSet<com.testdb.data.GeCaEmpHisPgto>();
+    private Set<com.testdb.data.GeCaEmpWeb> geCaEmpWebs = new HashSet<com.testdb.data.GeCaEmpWeb>();
 
     public Integer getGecaempid() {
         return gecaempid;
@@ -136,6 +136,86 @@ public class GeCaEmpresas {
         this.gecaempusacc = gecaempusacc;
     }
 
+    public Set<com.testdb.data.GeCaEmpCentrocusto> getGeCaEmpCentrocustos() {
+        return geCaEmpCentrocustos;
+    }
+
+    public void setGeCaEmpCentrocustos(Set<com.testdb.data.GeCaEmpCentrocusto> geCaEmpCentrocustos) {
+        this.geCaEmpCentrocustos = geCaEmpCentrocustos;
+    }
+
+    public Set<com.testdb.data.GeCaEmpEnd> getGeCaEmpEnds() {
+        return geCaEmpEnds;
+    }
+
+    public void setGeCaEmpEnds(Set<com.testdb.data.GeCaEmpEnd> geCaEmpEnds) {
+        this.geCaEmpEnds = geCaEmpEnds;
+    }
+
+    public Set<com.testdb.data.GeCaEmpHisPgto> getGeCaEmpHisPgtos() {
+        return geCaEmpHisPgtos;
+    }
+
+    public void setGeCaEmpHisPgtos(Set<com.testdb.data.GeCaEmpHisPgto> geCaEmpHisPgtos) {
+        this.geCaEmpHisPgtos = geCaEmpHisPgtos;
+    }
+
+    public Set<com.testdb.data.GeCaEmpLotacao> getGeCaEmpLotacaos() {
+        return geCaEmpLotacaos;
+    }
+
+    public void setGeCaEmpLotacaos(Set<com.testdb.data.GeCaEmpLotacao> geCaEmpLotacaos) {
+        this.geCaEmpLotacaos = geCaEmpLotacaos;
+    }
+
+    public Set<com.testdb.data.GeCaEmpCnaeSec> getGeCaEmpCnaeSecs() {
+        return geCaEmpCnaeSecs;
+    }
+
+    public void setGeCaEmpCnaeSecs(Set<com.testdb.data.GeCaEmpCnaeSec> geCaEmpCnaeSecs) {
+        this.geCaEmpCnaeSecs = geCaEmpCnaeSecs;
+    }
+
+    public Set<com.testdb.data.GeCaEmpSocios> getGeCaEmpSocioses() {
+        return geCaEmpSocioses;
+    }
+
+    public void setGeCaEmpSocioses(Set<com.testdb.data.GeCaEmpSocios> geCaEmpSocioses) {
+        this.geCaEmpSocioses = geCaEmpSocioses;
+    }
+
+    public Set<com.testdb.data.GeCaFuncionario> getGeCaFuncionarios() {
+        return geCaFuncionarios;
+    }
+
+    public void setGeCaFuncionarios(Set<com.testdb.data.GeCaFuncionario> geCaFuncionarios) {
+        this.geCaFuncionarios = geCaFuncionarios;
+    }
+
+    public Set<com.testdb.data.GeCaEmpTel> getGeCaEmpTels() {
+        return geCaEmpTels;
+    }
+
+    public void setGeCaEmpTels(Set<com.testdb.data.GeCaEmpTel> geCaEmpTels) {
+        this.geCaEmpTels = geCaEmpTels;
+    }
+
+    public Set<com.testdb.data.GeCaEmpDocsPj> getGeCaEmpDocsPjs() {
+        return geCaEmpDocsPjs;
+    }
+
+    public void setGeCaEmpDocsPjs(Set<com.testdb.data.GeCaEmpDocsPj> geCaEmpDocsPjs) {
+        this.geCaEmpDocsPjs = geCaEmpDocsPjs;
+    }
+
+    public Set<com.testdb.data.GeCaEmpDocsPf> getGeCaEmpDocsPfs() {
+        return geCaEmpDocsPfs;
+    }
+
+    public void setGeCaEmpDocsPfs(Set<com.testdb.data.GeCaEmpDocsPf> geCaEmpDocsPfs) {
+        this.geCaEmpDocsPfs = geCaEmpDocsPfs;
+    }
+
     public Set<com.testdb.data.GeSgGruXEmpresa> getGeSgGruXEmpresas() {
         return geSgGruXEmpresas;
     }
@@ -152,70 +232,6 @@ public class GeCaEmpresas {
         this.geCaEmpContases = geCaEmpContases;
     }
 
-    public Set<com.testdb.data.GeCaFuncionario> getGeCaFuncionarios() {
-        return geCaFuncionarios;
-    }
-
-    public void setGeCaFuncionarios(Set<com.testdb.data.GeCaFuncionario> geCaFuncionarios) {
-        this.geCaFuncionarios = geCaFuncionarios;
-    }
-
-    public Set<com.testdb.data.GeCaEmpCnaeSec> getGeCaEmpCnaeSecs() {
-        return geCaEmpCnaeSecs;
-    }
-
-    public void setGeCaEmpCnaeSecs(Set<com.testdb.data.GeCaEmpCnaeSec> geCaEmpCnaeSecs) {
-        this.geCaEmpCnaeSecs = geCaEmpCnaeSecs;
-    }
-
-    public Set<com.testdb.data.GeCaEmpLotacao> getGeCaEmpLotacaos() {
-        return geCaEmpLotacaos;
-    }
-
-    public void setGeCaEmpLotacaos(Set<com.testdb.data.GeCaEmpLotacao> geCaEmpLotacaos) {
-        this.geCaEmpLotacaos = geCaEmpLotacaos;
-    }
-
-    public Set<com.testdb.data.GeCaEmpCentrocusto> getGeCaEmpCentrocustos() {
-        return geCaEmpCentrocustos;
-    }
-
-    public void setGeCaEmpCentrocustos(Set<com.testdb.data.GeCaEmpCentrocusto> geCaEmpCentrocustos) {
-        this.geCaEmpCentrocustos = geCaEmpCentrocustos;
-    }
-
-    public Set<com.testdb.data.GeCaEmpWeb> getGeCaEmpWebs() {
-        return geCaEmpWebs;
-    }
-
-    public void setGeCaEmpWebs(Set<com.testdb.data.GeCaEmpWeb> geCaEmpWebs) {
-        this.geCaEmpWebs = geCaEmpWebs;
-    }
-
-    public Set<com.testdb.data.GeCaEmpEnd> getGeCaEmpEnds() {
-        return geCaEmpEnds;
-    }
-
-    public void setGeCaEmpEnds(Set<com.testdb.data.GeCaEmpEnd> geCaEmpEnds) {
-        this.geCaEmpEnds = geCaEmpEnds;
-    }
-
-    public Set<com.testdb.data.GeCaEmpDocsPf> getGeCaEmpDocsPfs() {
-        return geCaEmpDocsPfs;
-    }
-
-    public void setGeCaEmpDocsPfs(Set<com.testdb.data.GeCaEmpDocsPf> geCaEmpDocsPfs) {
-        this.geCaEmpDocsPfs = geCaEmpDocsPfs;
-    }
-
-    public Set<com.testdb.data.GeCaEmpSocios> getGeCaEmpSocioses() {
-        return geCaEmpSocioses;
-    }
-
-    public void setGeCaEmpSocioses(Set<com.testdb.data.GeCaEmpSocios> geCaEmpSocioses) {
-        this.geCaEmpSocioses = geCaEmpSocioses;
-    }
-
     public Set<com.testdb.data.GeCaEmpContatos> getGeCaEmpContatoses() {
         return geCaEmpContatoses;
     }
@@ -224,28 +240,12 @@ public class GeCaEmpresas {
         this.geCaEmpContatoses = geCaEmpContatoses;
     }
 
-    public Set<com.testdb.data.GeCaEmpDocsPj> getGeCaEmpDocsPjs() {
-        return geCaEmpDocsPjs;
+    public Set<com.testdb.data.GeCaEmpWeb> getGeCaEmpWebs() {
+        return geCaEmpWebs;
     }
 
-    public void setGeCaEmpDocsPjs(Set<com.testdb.data.GeCaEmpDocsPj> geCaEmpDocsPjs) {
-        this.geCaEmpDocsPjs = geCaEmpDocsPjs;
-    }
-
-    public Set<com.testdb.data.GeCaEmpTel> getGeCaEmpTels() {
-        return geCaEmpTels;
-    }
-
-    public void setGeCaEmpTels(Set<com.testdb.data.GeCaEmpTel> geCaEmpTels) {
-        this.geCaEmpTels = geCaEmpTels;
-    }
-
-    public Set<com.testdb.data.GeCaEmpHisPgto> getGeCaEmpHisPgtos() {
-        return geCaEmpHisPgtos;
-    }
-
-    public void setGeCaEmpHisPgtos(Set<com.testdb.data.GeCaEmpHisPgto> geCaEmpHisPgtos) {
-        this.geCaEmpHisPgtos = geCaEmpHisPgtos;
+    public void setGeCaEmpWebs(Set<com.testdb.data.GeCaEmpWeb> geCaEmpWebs) {
+        this.geCaEmpWebs = geCaEmpWebs;
     }
 
 }

@@ -4,9 +4,9 @@ start: function() {
 },
 "preferredDevice": "desktop",
 JDBCSerVarResult: function() {
-this.blockaccess.update();
-if ((this.label2.caption == "Authenticated") && (this.access.caption <= 2)) this.navigationCall2.update();
-if (this.access.caption > 2) this.label5.setCaption("Account Blocked Temporarily");
+// this.blockaccess.update();
+if (this.status.caption == "Authenticated") this.app.LOGINnavigation.update();
+// if (this.access.caption > 2) this.label5.setCaption("Account Blocked Temporarily");
 },
 label3Click: function(inSender, inEvent) {
 window.location.search = "dojo.locale=pt";
@@ -30,13 +30,6 @@ appI18n: ["wm.Property", {"bindSource":undefined,"bindTarget":undefined,"propert
 appCurrencyLocale: ["wm.Property", {"bindSource":undefined,"bindTarget":undefined,"property":"app.currencyLocale","type":"string"}, {}],
 onAppPageChanged: ["wm.Property", {"isEvent":true,"property":"app.onPageChanged","type":"string"}, {}],
 onAppSessionExpiration: ["wm.Property", {"isEvent":true,"property":"app.onSessionExpiration","type":"string"}, {}],
-navigationCall2: ["wm.NavigationCall", {"operation":"gotoPage"}, {}, {
-input: ["wm.ServiceInput", {"type":"gotoPageInputs"}, {}, {
-binding: ["wm.Binding", {}, {}, {
-wire: ["wm.Wire", {"expression":"\"Landing\"","targetProperty":"pageName"}, {}]
-}]
-}]
-}],
 navigationCall3: ["wm.NavigationCall", {"operation":"gotoPage"}, {}, {
 input: ["wm.ServiceInput", {"type":"gotoPageInputs"}, {}, {
 binding: ["wm.Binding", {}, {}, {
@@ -52,9 +45,6 @@ wire1: ["wm.Wire", {"expression":undefined,"source":"text2.dataValue","targetPro
 }]
 }]
 }],
-blockaccess: ["wm.ServiceVariable", {"inFlightBehavior":"executeLast","operation":"chkfailure","service":"PostGREAuthorization"}, {}, {
-input: ["wm.ServiceInput", {"type":"chkfailureInputs"}, {}]
-}],
 layoutBox1: ["wm.Layout", {"horizontalAlign":"center","styles":{"backgroundImage":"resources/images/bg/w1-4px.jpg","backgroundRepeat":"repeat","opacity":0.95},"verticalAlign":"middle"}, {}, {
 panel2: ["wm.Panel", {"height":"48px","horizontalAlign":"left","layoutKind":"left-to-right","verticalAlign":"top","width":"100%"}, {}],
 panel1: ["wm.Panel", {"height":"33px","horizontalAlign":"center","layoutKind":"left-to-right","verticalAlign":"middle","width":"100%"}, {}, {
@@ -67,18 +57,13 @@ label1: ["wm.Label", {"align":"center","caption":"Please login to continue...","
 text1: ["wm.Text", {"autoSizeWidth":true,"caption":"Username","captionSize":"120px","changeOnKey":true,"dataValue":undefined,"displayValue":"","height":"5%","maxHeight":0,"padding":"0","required":true,"styles":{"color":"#ffffff"},"width":"354px"}, {}],
 text2: ["wm.Text", {"autoSizeWidth":true,"caption":"Password","captionSize":"120px","dataValue":undefined,"displayValue":"","height":"5%","maxHeight":0,"padding":"0","password":true,"required":true,"styles":{"color":"#ffffff"},"width":"354px"}, {"onEnterKeyPress":"JDBCSerVar"}],
 button1: ["wm.Button", {"caption":"Access","height":"8%","margin":"4","width":"20%"}, {"onclick":"JDBCSerVar"}],
-label2: ["wm.Label", {"align":"center","height":"10%","padding":"4","styles":{"color":"#ffffff","fontSize":"14px"},"width":"100%"}, {}, {
+status: ["wm.Label", {"align":"center","height":"10%","padding":"4","styles":{"color":"#ffffff","fontSize":"14px"},"width":"100%"}, {}, {
 binding: ["wm.Binding", {}, {}, {
 wire: ["wm.Wire", {"expression":undefined,"source":"JDBCSerVar.dataValue","targetProperty":"caption"}, {}]
 }]
 }],
 label5: ["wm.Label", {"align":"center","caption":"","height":"10%","padding":"4","styles":{"color":"#ed0836","fontSize":"14px"},"width":"100%"}, {}],
-FP: ["wm.Label", {"align":"center","caption":"Forgot Password?","height":"5%","padding":"4","styles":{"fontSize":"14px","backgroundColor":"","color":"#ffffff"},"width":"139px"}, {"onclick":"navigationCall3"}],
-access: ["wm.Label", {"align":"center","height":"44px","padding":"4","styles":{"color":"#ffffff"},"width":"75px"}, {}, {
-binding: ["wm.Binding", {}, {}, {
-wire: ["wm.Wire", {"expression":undefined,"source":"blockaccess.dataValue","targetProperty":"caption"}, {}]
-}]
-}]
+FP: ["wm.Label", {"align":"center","caption":"Forgot Password?","height":"5%","padding":"4","styles":{"fontSize":"14px","backgroundColor":"","color":"#ffffff"},"width":"139px"}, {"onclick":"navigationCall3"}]
 }]
 }]
 };

@@ -5,11 +5,11 @@
             <column name="GESGGXMID"/>
             <generator class="identity"/>
         </id>
-        <property name="gesggxmidmod" type="integer">
-            <column name="GESGGXMIDMod" not-null="true"/>
-        </property>
         <many-to-one name="geSgGrupos" class="com.testdb.data.GeSgGrupos">
             <column name="GESGGXMIDGrp" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="siCliModulo" class="com.testdb.data.SiCliModulo">
+            <column name="GESGGXMIDMod" not-null="true"/>
         </many-to-one>
     </class>
 </hibernate-mapping>

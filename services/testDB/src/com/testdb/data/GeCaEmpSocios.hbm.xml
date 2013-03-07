@@ -83,11 +83,11 @@
         <property name="geempsoobs" type="string">
             <column name="GEEMPSOOBS" length="500"/>
         </property>
-        <many-to-one name="geTbUfByGeempsouf" class="com.testdb.data.GeTbUf">
-            <column name="GEEMPSOUF"/>
-        </many-to-one>
         <many-to-one name="geTbUfByGeempsorguf" class="com.testdb.data.GeTbUf">
             <column name="GEEMPSORGUF"/>
+        </many-to-one>
+        <many-to-one name="geTbUfByGeempsouf" class="com.testdb.data.GeTbUf">
+            <column name="GEEMPSOUF"/>
         </many-to-one>
         <many-to-one name="geTbQualificacaoSoc" class="com.testdb.data.GeTbQualificacaoSoc">
             <column name="GEEMPSOQUALI"/>

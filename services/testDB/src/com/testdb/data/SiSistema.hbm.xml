@@ -26,17 +26,17 @@
         <many-to-one name="siProduto" class="com.testdb.data.SiProduto">
             <column name="SISISPRODID" not-null="true"/>
         </many-to-one>
-        <set name="siSisVersaos" inverse="true" cascade="">
-            <key>
-                <column name="SIMVEIDSISTEMA" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.SiSisVersao"/>
-        </set>
         <set name="siSisModulos" inverse="true" cascade="">
             <key>
                 <column name="SIMODIDSISTEMA" not-null="true"/>
             </key>
             <one-to-many class="com.testdb.data.SiSisModulo"/>
+        </set>
+        <set name="siSisVersaos" inverse="true" cascade="">
+            <key>
+                <column name="SIMVEIDSISTEMA" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.SiSisVersao"/>
         </set>
     </class>
 </hibernate-mapping>

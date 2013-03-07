@@ -5,9 +5,6 @@
             <column name="GESGGXCID"/>
             <generator class="identity"/>
         </id>
-        <property name="gesggxcidcompo" type="integer">
-            <column name="GESGGXCIDCompo" not-null="true"/>
-        </property>
         <property name="gesggxcacessa" type="string">
             <column name="GESGGXCAcessa" length="1" not-null="true"/>
         </property>
@@ -23,6 +20,9 @@
         <property name="gesggxctemCampos" type="string">
             <column name="GESGGXCTemCampos" length="1" not-null="true"/>
         </property>
+        <many-to-one name="siSisModComponentes" class="com.testdb.data.SiSisModComponentes">
+            <column name="GESGGXCIDCompo" not-null="true"/>
+        </many-to-one>
         <many-to-one name="geSgGrupos" class="com.testdb.data.GeSgGrupos">
             <column name="GESGGXCIDGrp" not-null="true"/>
         </many-to-one>

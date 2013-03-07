@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeTbTiposConta
- *  02/23/2013 10:50:04
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeTbTiposConta {
@@ -20,8 +20,8 @@ public class GeTbTiposConta {
     private String getipoconstatus;
     private Date getipoconinivig;
     private Date getipoconfimvig;
-    private Set<com.testdb.data.SiCliContas> siCliContases = new HashSet<com.testdb.data.SiCliContas>();
     private Set<com.testdb.data.GeCaEmpContas> geCaEmpContases = new HashSet<com.testdb.data.GeCaEmpContas>();
+    private Set<com.testdb.data.SiCliContas> siCliContases = new HashSet<com.testdb.data.SiCliContas>();
 
     public Integer getGetipoconid() {
         return getipoconid;
@@ -79,20 +79,20 @@ public class GeTbTiposConta {
         this.getipoconfimvig = getipoconfimvig;
     }
 
-    public Set<com.testdb.data.SiCliContas> getSiCliContases() {
-        return siCliContases;
-    }
-
-    public void setSiCliContases(Set<com.testdb.data.SiCliContas> siCliContases) {
-        this.siCliContases = siCliContases;
-    }
-
     public Set<com.testdb.data.GeCaEmpContas> getGeCaEmpContases() {
         return geCaEmpContases;
     }
 
     public void setGeCaEmpContases(Set<com.testdb.data.GeCaEmpContas> geCaEmpContases) {
         this.geCaEmpContases = geCaEmpContases;
+    }
+
+    public Set<com.testdb.data.SiCliContas> getSiCliContases() {
+        return siCliContases;
+    }
+
+    public void setSiCliContases(Set<com.testdb.data.SiCliContas> siCliContases) {
+        this.siCliContases = siCliContases;
     }
 
 }

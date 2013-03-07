@@ -4,18 +4,21 @@ import java.sql. * ;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import sun.misc.BASE64Encoder;@ExposeToClient
+import sun.misc.BASE64Encoder;
+@ExposeToClient
 public class Authorize extends JavaServiceSuperClass {
     String greeting = "Welcome";
+    int ClientID;
     int pass=0;
     static int failure=0;
+    int isadmin=0;
     // Connecting to DB
     public Connection connectDB()
      {
-        String driverclass="org.postgresql.Driver";
-        String url="jdbc:postgresql://localhost:5432/postgres";
-        String username="postgres";
-        String password="basel1";
+        String driverclass="com.mysql.jdbc.Driver";
+        String url="jdbc:mysql://localhost:3306/test";
+        String username="root";
+        String password="nbuser";
         Connection conn=null;
         
         try {
@@ -41,7 +44,7 @@ public class Authorize extends JavaServiceSuperClass {
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery("select * from ge_sg_usuarios");
             while (rs.next()) 
-            { in = rs.getInt(2);
+            { in = rs.getInt(1);
                 // if username matches
                 if ((uname.equals(rs.getString(3))))
                // Checking password
@@ -51,9 +54,10 @@ public class Authorize extends JavaServiceSuperClass {
                     // Check user Status
                     res1 = 1;
                     // Retrieve Designation (Administrator/User)
-                    String s = "S";
-                    if (s.equals(rs.getString(9))) Desg = "Administrator";
-                    break;
+                    String s = "Y";
+                    
+                    if (s.equals(rs.getString(9))) {Desg = "Administrator"; isadmin=1;
+                    break;}
                  }
             }
             rs.close();
@@ -67,7 +71,8 @@ public class Authorize extends JavaServiceSuperClass {
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery("select * from ge_sg_grupos");
             while (rs.next()) { in = rs.getInt(1);
-                if (nxt == (rs.getInt(2))) { in = nxt;
+            ClientID = in;
+                if (nxt == (rs.getInt(2))) { nxt=in;
                     res2 = 1;
                     break;
                 }
@@ -100,9 +105,9 @@ public class Authorize extends JavaServiceSuperClass {
         }
         catch (Exception e) {}
         // Authenticating if all steps are successful
-        if ((res1 == 1) && (res2 == 1) && (res3 == 1) &&(failure<3)) {
+        if ((res1 == 1) && (res2 == 1) && (res3 == 1) /*&&(failure<3)*/) {
             res = "Authenticated";
-            failure=0;
+            //failure=0;
             greeting="Welcome " + Client + " " + Desg + "!";
             return res;
         }
@@ -160,5 +165,10 @@ public class Authorize extends JavaServiceSuperClass {
       return pass;
      }
      public int chkfailure(){
-         return failure;}
+        return failure;}
+         
+     public int getclientid(){return ClientID;}
+     
+     public int designation(){return isadmin;}
+         
      }

@@ -5,14 +5,14 @@ package com.testdb.data;
 
 /**
  *  testDB.GeSgGruXCompo
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeSgGruXCompo {
 
     private Integer gesggxcid;
+    private SiSisModComponentes siSisModComponentes;
     private GeSgGrupos geSgGrupos;
-    private Integer gesggxcidcompo;
     private String gesggxcacessa;
     private String gesggxcinclui;
     private String gesggxcexclui;
@@ -27,20 +27,20 @@ public class GeSgGruXCompo {
         this.gesggxcid = gesggxcid;
     }
 
+    public SiSisModComponentes getSiSisModComponentes() {
+        return siSisModComponentes;
+    }
+
+    public void setSiSisModComponentes(SiSisModComponentes siSisModComponentes) {
+        this.siSisModComponentes = siSisModComponentes;
+    }
+
     public GeSgGrupos getGeSgGrupos() {
         return geSgGrupos;
     }
 
     public void setGeSgGrupos(GeSgGrupos geSgGrupos) {
         this.geSgGrupos = geSgGrupos;
-    }
-
-    public Integer getGesggxcidcompo() {
-        return gesggxcidcompo;
-    }
-
-    public void setGesggxcidcompo(Integer gesggxcidcompo) {
-        this.gesggxcidcompo = gesggxcidcompo;
     }
 
     public String getGesggxcacessa() {

@@ -1513,7 +1513,7 @@ wm.types = {
 				},
 				"geTbUfByGeempsorguf": {
 					"exclude": [],
-					"fieldOrder": 28,
+					"fieldOrder": 27,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -1523,7 +1523,7 @@ wm.types = {
 				},
 				"geTbUfByGeempsouf": {
 					"exclude": [],
-					"fieldOrder": 27,
+					"fieldOrder": 28,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -1924,7 +1924,7 @@ wm.types = {
 			"fields": {
 				"geCaEmpCentrocustos": {
 					"exclude": [],
-					"fieldOrder": 17,
+					"fieldOrder": 12,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -1934,7 +1934,7 @@ wm.types = {
 				},
 				"geCaEmpCnaeSecs": {
 					"exclude": [],
-					"fieldOrder": 15,
+					"fieldOrder": 16,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -1944,7 +1944,7 @@ wm.types = {
 				},
 				"geCaEmpContases": {
 					"exclude": [],
-					"fieldOrder": 13,
+					"fieldOrder": 23,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -1954,7 +1954,7 @@ wm.types = {
 				},
 				"geCaEmpContatoses": {
 					"exclude": [],
-					"fieldOrder": 22,
+					"fieldOrder": 24,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -1964,7 +1964,7 @@ wm.types = {
 				},
 				"geCaEmpDocsPfs": {
 					"exclude": [],
-					"fieldOrder": 20,
+					"fieldOrder": 21,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -1974,7 +1974,7 @@ wm.types = {
 				},
 				"geCaEmpDocsPjs": {
 					"exclude": [],
-					"fieldOrder": 23,
+					"fieldOrder": 20,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -1984,7 +1984,7 @@ wm.types = {
 				},
 				"geCaEmpEnds": {
 					"exclude": [],
-					"fieldOrder": 19,
+					"fieldOrder": 13,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -1994,7 +1994,7 @@ wm.types = {
 				},
 				"geCaEmpHisPgtos": {
 					"exclude": [],
-					"fieldOrder": 25,
+					"fieldOrder": 14,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2004,7 +2004,7 @@ wm.types = {
 				},
 				"geCaEmpLotacaos": {
 					"exclude": [],
-					"fieldOrder": 16,
+					"fieldOrder": 15,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2014,7 +2014,7 @@ wm.types = {
 				},
 				"geCaEmpSocioses": {
 					"exclude": [],
-					"fieldOrder": 21,
+					"fieldOrder": 17,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2024,7 +2024,7 @@ wm.types = {
 				},
 				"geCaEmpTels": {
 					"exclude": [],
-					"fieldOrder": 24,
+					"fieldOrder": 19,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2034,7 +2034,7 @@ wm.types = {
 				},
 				"geCaEmpWebs": {
 					"exclude": [],
-					"fieldOrder": 18,
+					"fieldOrder": 25,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2044,7 +2044,7 @@ wm.types = {
 				},
 				"geCaFuncionarios": {
 					"exclude": [],
-					"fieldOrder": 14,
+					"fieldOrder": 18,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2054,7 +2054,7 @@ wm.types = {
 				},
 				"geSgGruXEmpresas": {
 					"exclude": [],
-					"fieldOrder": 12,
+					"fieldOrder": 22,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2452,7 +2452,7 @@ wm.types = {
 				},
 				"gesggxcacessa": {
 					"exclude": [],
-					"fieldOrder": 2,
+					"fieldOrder": 1,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -2462,7 +2462,7 @@ wm.types = {
 				},
 				"gesggxcaltera": {
 					"exclude": [],
-					"fieldOrder": 5,
+					"fieldOrder": 4,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -2472,7 +2472,7 @@ wm.types = {
 				},
 				"gesggxcexclui": {
 					"exclude": [],
-					"fieldOrder": 4,
+					"fieldOrder": 3,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -2490,19 +2490,9 @@ wm.types = {
 					"required": true,
 					"type": "java.lang.Integer"
 				},
-				"gesggxcidcompo": {
-					"exclude": [],
-					"fieldOrder": 1,
-					"fieldSubType": null,
-					"include": [],
-					"isList": false,
-					"noChange": [],
-					"required": true,
-					"type": "java.lang.Integer"
-				},
 				"gesggxcinclui": {
 					"exclude": [],
-					"fieldOrder": 3,
+					"fieldOrder": 2,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -2512,13 +2502,23 @@ wm.types = {
 				},
 				"gesggxctemCampos": {
 					"exclude": [],
-					"fieldOrder": 6,
+					"fieldOrder": 5,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
 					"noChange": [],
 					"required": true,
 					"type": "java.lang.String"
+				},
+				"siSisModComponentes": {
+					"exclude": [],
+					"fieldOrder": 6,
+					"fieldSubType": null,
+					"include": [],
+					"isList": false,
+					"noChange": [],
+					"required": true,
+					"type": "com.testdb.data.SiSisModComponentes"
 				}
 			},
 			"internal": false,
@@ -2566,7 +2566,7 @@ wm.types = {
 			"fields": {
 				"geSgGrupos": {
 					"exclude": [],
-					"fieldOrder": 2,
+					"fieldOrder": 1,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -2584,15 +2584,15 @@ wm.types = {
 					"required": true,
 					"type": "java.lang.Integer"
 				},
-				"gesggxmidmod": {
+				"siCliModulo": {
 					"exclude": [],
-					"fieldOrder": 1,
+					"fieldOrder": 2,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
 					"noChange": [],
 					"required": true,
-					"type": "java.lang.Integer"
+					"type": "com.testdb.data.SiCliModulo"
 				}
 			},
 			"internal": false,
@@ -2603,7 +2603,7 @@ wm.types = {
 			"fields": {
 				"geSgGruXCampos": {
 					"exclude": [],
-					"fieldOrder": 6,
+					"fieldOrder": 8,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2613,7 +2613,7 @@ wm.types = {
 				},
 				"geSgGruXCompos": {
 					"exclude": [],
-					"fieldOrder": 10,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2633,7 +2633,7 @@ wm.types = {
 				},
 				"geSgGruXModuloses": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 10,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2643,7 +2643,7 @@ wm.types = {
 				},
 				"geSgUsuarioses": {
 					"exclude": [],
-					"fieldOrder": 8,
+					"fieldOrder": 6,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2777,7 +2777,7 @@ wm.types = {
 			"fields": {
 				"diHlHelpUsus": {
 					"exclude": [],
-					"fieldOrder": 12,
+					"fieldOrder": 13,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2787,7 +2787,7 @@ wm.types = {
 				},
 				"geSgAuditorias": {
 					"exclude": [],
-					"fieldOrder": 13,
+					"fieldOrder": 12,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -2944,7 +2944,7 @@ wm.types = {
 				},
 				"geTbBcAgenciases": {
 					"exclude": [],
-					"fieldOrder": 9,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -3014,7 +3014,7 @@ wm.types = {
 				},
 				"siCliContases": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 9,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -3346,7 +3346,7 @@ wm.types = {
 			"fields": {
 				"geCaEmpCnaeSecs": {
 					"exclude": [],
-					"fieldOrder": 3,
+					"fieldOrder": 5,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -3356,7 +3356,7 @@ wm.types = {
 				},
 				"geCaEmpDocsPjs": {
 					"exclude": [],
-					"fieldOrder": 4,
+					"fieldOrder": 3,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -3366,7 +3366,7 @@ wm.types = {
 				},
 				"geCaEmpLotacaos": {
 					"exclude": [],
-					"fieldOrder": 5,
+					"fieldOrder": 4,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -3962,7 +3962,7 @@ wm.types = {
 			"fields": {
 				"geCaEmpContases": {
 					"exclude": [],
-					"fieldOrder": 8,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4032,7 +4032,7 @@ wm.types = {
 				},
 				"siCliContases": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 8,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4059,7 +4059,7 @@ wm.types = {
 			"fields": {
 				"geCaEmpContatosHists": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 8,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4129,7 +4129,7 @@ wm.types = {
 				},
 				"siCliContatosHists": {
 					"exclude": [],
-					"fieldOrder": 8,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4397,7 +4397,7 @@ wm.types = {
 			"fields": {
 				"geCaEmpEnds": {
 					"exclude": [],
-					"fieldOrder": 9,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4467,7 +4467,7 @@ wm.types = {
 				},
 				"siCliEnds": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 8,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4487,7 +4487,7 @@ wm.types = {
 				},
 				"stEpFabricEnds": {
 					"exclude": [],
-					"fieldOrder": 8,
+					"fieldOrder": 9,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4504,7 +4504,7 @@ wm.types = {
 			"fields": {
 				"geCaEmpContatosesForGeempcontelatpid": {
 					"exclude": [],
-					"fieldOrder": 14,
+					"fieldOrder": 10,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4514,7 +4514,7 @@ wm.types = {
 				},
 				"geCaEmpContatosesForGeempcontelbtpid": {
 					"exclude": [],
-					"fieldOrder": 11,
+					"fieldOrder": 8,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4524,7 +4524,7 @@ wm.types = {
 				},
 				"geCaEmpTels": {
 					"exclude": [],
-					"fieldOrder": 16,
+					"fieldOrder": 14,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4594,7 +4594,7 @@ wm.types = {
 				},
 				"siCliContatosesForSiclicontelatpid": {
 					"exclude": [],
-					"fieldOrder": 13,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4604,7 +4604,7 @@ wm.types = {
 				},
 				"siCliContatosesForSiclicontelbtpid": {
 					"exclude": [],
-					"fieldOrder": 8,
+					"fieldOrder": 11,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4614,7 +4614,7 @@ wm.types = {
 				},
 				"siCliTels": {
 					"exclude": [],
-					"fieldOrder": 15,
+					"fieldOrder": 9,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4634,7 +4634,7 @@ wm.types = {
 				},
 				"stEpFabricContatosesForStfacontelatpid": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 12,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4644,7 +4644,7 @@ wm.types = {
 				},
 				"stEpFabricContatosesForStfacontelbtpid": {
 					"exclude": [],
-					"fieldOrder": 10,
+					"fieldOrder": 16,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4654,7 +4654,7 @@ wm.types = {
 				},
 				"stEpFabricTels": {
 					"exclude": [],
-					"fieldOrder": 12,
+					"fieldOrder": 13,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4664,7 +4664,7 @@ wm.types = {
 				},
 				"stEpFabricWebs": {
 					"exclude": [],
-					"fieldOrder": 9,
+					"fieldOrder": 15,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4681,7 +4681,7 @@ wm.types = {
 			"fields": {
 				"geCaEmpWebs": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 8,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4751,7 +4751,7 @@ wm.types = {
 				},
 				"siCliWebs": {
 					"exclude": [],
-					"fieldOrder": 8,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4788,7 +4788,7 @@ wm.types = {
 				},
 				"geCaEmpDocsPfsForGeempdpfrguf": {
 					"exclude": [],
-					"fieldOrder": 15,
+					"fieldOrder": 11,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4798,7 +4798,7 @@ wm.types = {
 				},
 				"geCaEmpEnds": {
 					"exclude": [],
-					"fieldOrder": 16,
+					"fieldOrder": 8,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4808,7 +4808,7 @@ wm.types = {
 				},
 				"geCaEmpLotacaos": {
 					"exclude": [],
-					"fieldOrder": 9,
+					"fieldOrder": 12,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4818,7 +4818,7 @@ wm.types = {
 				},
 				"geCaEmpSociosesForGeempsorguf": {
 					"exclude": [],
-					"fieldOrder": 8,
+					"fieldOrder": 16,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4828,7 +4828,7 @@ wm.types = {
 				},
 				"geCaEmpSociosesForGeempsouf": {
 					"exclude": [],
-					"fieldOrder": 12,
+					"fieldOrder": 15,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4838,7 +4838,7 @@ wm.types = {
 				},
 				"geTbMunicipioses": {
 					"exclude": [],
-					"fieldOrder": 14,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4908,7 +4908,7 @@ wm.types = {
 				},
 				"siCliDocsPfs": {
 					"exclude": [],
-					"fieldOrder": 13,
+					"fieldOrder": 14,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4918,7 +4918,7 @@ wm.types = {
 				},
 				"siCliEnds": {
 					"exclude": [],
-					"fieldOrder": 11,
+					"fieldOrder": 9,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -4938,7 +4938,7 @@ wm.types = {
 				},
 				"stEpFabricEnds": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 13,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -5679,6 +5679,16 @@ wm.types = {
 		},
 		"com.testdb.data.SiCliModulo": {
 			"fields": {
+				"geSgGruXModuloses": {
+					"exclude": [],
+					"fieldOrder": 6,
+					"fieldSubType": null,
+					"include": [],
+					"isList": true,
+					"noChange": [],
+					"required": false,
+					"type": "com.testdb.data.GeSgGruXModulos"
+				},
 				"siClientes": {
 					"exclude": [],
 					"fieldOrder": 4,
@@ -5979,7 +5989,7 @@ wm.types = {
 			"fields": {
 				"geCaEmpresases": {
 					"exclude": [],
-					"fieldOrder": 12,
+					"fieldOrder": 29,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -5989,7 +5999,7 @@ wm.types = {
 				},
 				"geSgGruposes": {
 					"exclude": [],
-					"fieldOrder": 11,
+					"fieldOrder": 22,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -5999,7 +6009,7 @@ wm.types = {
 				},
 				"geTbBancoses": {
 					"exclude": [],
-					"fieldOrder": 25,
+					"fieldOrder": 19,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6009,7 +6019,7 @@ wm.types = {
 				},
 				"geTbIndexes": {
 					"exclude": [],
-					"fieldOrder": 22,
+					"fieldOrder": 28,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6029,7 +6039,7 @@ wm.types = {
 				},
 				"geTbMunicipioses": {
 					"exclude": [],
-					"fieldOrder": 19,
+					"fieldOrder": 32,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6039,7 +6049,7 @@ wm.types = {
 				},
 				"geTbNatJurClasses": {
 					"exclude": [],
-					"fieldOrder": 16,
+					"fieldOrder": 34,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6049,7 +6059,7 @@ wm.types = {
 				},
 				"geTbQualificacaoSocs": {
 					"exclude": [],
-					"fieldOrder": 23,
+					"fieldOrder": 12,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6059,7 +6069,7 @@ wm.types = {
 				},
 				"geTbTiposContas": {
 					"exclude": [],
-					"fieldOrder": 21,
+					"fieldOrder": 17,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6069,7 +6079,7 @@ wm.types = {
 				},
 				"geTbTiposContatos": {
 					"exclude": [],
-					"fieldOrder": 29,
+					"fieldOrder": 21,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6079,7 +6089,7 @@ wm.types = {
 				},
 				"geTbTiposContratos": {
 					"exclude": [],
-					"fieldOrder": 32,
+					"fieldOrder": 27,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6089,7 +6099,7 @@ wm.types = {
 				},
 				"geTbTiposDocs": {
 					"exclude": [],
-					"fieldOrder": 33,
+					"fieldOrder": 37,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6099,7 +6109,7 @@ wm.types = {
 				},
 				"geTbTiposEmpresases": {
 					"exclude": [],
-					"fieldOrder": 28,
+					"fieldOrder": 26,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6109,7 +6119,7 @@ wm.types = {
 				},
 				"geTbTiposEnderecos": {
 					"exclude": [],
-					"fieldOrder": 30,
+					"fieldOrder": 15,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6119,7 +6129,7 @@ wm.types = {
 				},
 				"geTbTiposTelefones": {
 					"exclude": [],
-					"fieldOrder": 18,
+					"fieldOrder": 23,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6129,7 +6139,7 @@ wm.types = {
 				},
 				"geTbTiposWebs": {
 					"exclude": [],
-					"fieldOrder": 34,
+					"fieldOrder": 38,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6139,7 +6149,7 @@ wm.types = {
 				},
 				"geTbUfs": {
 					"exclude": [],
-					"fieldOrder": 35,
+					"fieldOrder": 13,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6149,7 +6159,7 @@ wm.types = {
 				},
 				"siCliContases": {
 					"exclude": [],
-					"fieldOrder": 24,
+					"fieldOrder": 35,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6159,7 +6169,7 @@ wm.types = {
 				},
 				"siCliContatoses": {
 					"exclude": [],
-					"fieldOrder": 37,
+					"fieldOrder": 31,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6169,7 +6179,7 @@ wm.types = {
 				},
 				"siCliDocsPfs": {
 					"exclude": [],
-					"fieldOrder": 20,
+					"fieldOrder": 24,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6179,7 +6189,7 @@ wm.types = {
 				},
 				"siCliDocsPjs": {
 					"exclude": [],
-					"fieldOrder": 26,
+					"fieldOrder": 30,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6189,7 +6199,7 @@ wm.types = {
 				},
 				"siCliEnds": {
 					"exclude": [],
-					"fieldOrder": 14,
+					"fieldOrder": 33,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6199,7 +6209,7 @@ wm.types = {
 				},
 				"siCliHisPgtos": {
 					"exclude": [],
-					"fieldOrder": 31,
+					"fieldOrder": 36,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6209,7 +6219,7 @@ wm.types = {
 				},
 				"siCliModulos": {
 					"exclude": [],
-					"fieldOrder": 27,
+					"fieldOrder": 11,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6219,7 +6229,7 @@ wm.types = {
 				},
 				"siCliTels": {
 					"exclude": [],
-					"fieldOrder": 13,
+					"fieldOrder": 16,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6229,7 +6239,7 @@ wm.types = {
 				},
 				"siCliValoreses": {
 					"exclude": [],
-					"fieldOrder": 38,
+					"fieldOrder": 14,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6239,7 +6249,7 @@ wm.types = {
 				},
 				"siCliWebs": {
 					"exclude": [],
-					"fieldOrder": 15,
+					"fieldOrder": 18,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6349,7 +6359,7 @@ wm.types = {
 				},
 				"stEpCategFabrs": {
 					"exclude": [],
-					"fieldOrder": 36,
+					"fieldOrder": 20,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6359,7 +6369,7 @@ wm.types = {
 				},
 				"stEpFabricanteses": {
 					"exclude": [],
-					"fieldOrder": 17,
+					"fieldOrder": 25,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6624,7 +6634,7 @@ wm.types = {
 			"fields": {
 				"diHlHelpUsus": {
 					"exclude": [],
-					"fieldOrder": 26,
+					"fieldOrder": 28,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6632,9 +6642,19 @@ wm.types = {
 					"required": false,
 					"type": "com.testdb.data.DiHlHelpUsu"
 				},
+				"geSgGruXCompos": {
+					"exclude": [],
+					"fieldOrder": 26,
+					"fieldSubType": null,
+					"include": [],
+					"isList": true,
+					"noChange": [],
+					"required": false,
+					"type": "com.testdb.data.GeSgGruXCompo"
+				},
 				"siSisModCompCamposes": {
 					"exclude": [],
-					"fieldOrder": 27,
+					"fieldOrder": 29,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6644,7 +6664,7 @@ wm.types = {
 				},
 				"siSisModCompoHelps": {
 					"exclude": [],
-					"fieldOrder": 29,
+					"fieldOrder": 27,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -6664,7 +6684,7 @@ wm.types = {
 				},
 				"siSisVerComponenteses": {
 					"exclude": [],
-					"fieldOrder": 28,
+					"fieldOrder": 30,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -7132,7 +7152,7 @@ wm.types = {
 			"fields": {
 				"siSisModTabCamposes": {
 					"exclude": [],
-					"fieldOrder": 12,
+					"fieldOrder": 11,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -7142,7 +7162,7 @@ wm.types = {
 				},
 				"siSisModTabIndexes": {
 					"exclude": [],
-					"fieldOrder": 11,
+					"fieldOrder": 12,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -7279,7 +7299,7 @@ wm.types = {
 				},
 				"siSisModComponenteses": {
 					"exclude": [],
-					"fieldOrder": 5,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -7289,7 +7309,7 @@ wm.types = {
 				},
 				"siSisModDescrDets": {
 					"exclude": [],
-					"fieldOrder": 4,
+					"fieldOrder": 5,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -7299,7 +7319,7 @@ wm.types = {
 				},
 				"siSisModTabelases": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 4,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -7490,7 +7510,7 @@ wm.types = {
 				},
 				"siSisModulos": {
 					"exclude": [],
-					"fieldOrder": 9,
+					"fieldOrder": 8,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -7500,7 +7520,7 @@ wm.types = {
 				},
 				"siSisVersaos": {
 					"exclude": [],
-					"fieldOrder": 8,
+					"fieldOrder": 9,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -8042,7 +8062,7 @@ wm.types = {
 				},
 				"stEpFabricContatoses": {
 					"exclude": [],
-					"fieldOrder": 10,
+					"fieldOrder": 11,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -8052,7 +8072,7 @@ wm.types = {
 				},
 				"stEpFabricEnds": {
 					"exclude": [],
-					"fieldOrder": 12,
+					"fieldOrder": 9,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -8062,7 +8082,7 @@ wm.types = {
 				},
 				"stEpFabricTels": {
 					"exclude": [],
-					"fieldOrder": 9,
+					"fieldOrder": 10,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -8072,7 +8092,7 @@ wm.types = {
 				},
 				"stEpFabricWebs": {
 					"exclude": [],
-					"fieldOrder": 11,
+					"fieldOrder": 12,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,

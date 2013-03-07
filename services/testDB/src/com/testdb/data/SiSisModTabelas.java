@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  *  testDB.SiSisModTabelas
- *  02/23/2013 10:50:06
+ *  03/07/2013 22:09:27
  * 
  */
 public class SiSisModTabelas {
@@ -23,8 +23,8 @@ public class SiSisModTabelas {
     private String sismttemid;
     private String sismtdadosIni;
     private String sismtclienteUsa;
-    private Set<com.testdb.data.SiSisModTabIndex> siSisModTabIndexes = new HashSet<com.testdb.data.SiSisModTabIndex>();
     private Set<com.testdb.data.SiSisModTabCampos> siSisModTabCamposes = new HashSet<com.testdb.data.SiSisModTabCampos>();
+    private Set<com.testdb.data.SiSisModTabIndex> siSisModTabIndexes = new HashSet<com.testdb.data.SiSisModTabIndex>();
 
     public Integer getSismtid() {
         return sismtid;
@@ -114,20 +114,20 @@ public class SiSisModTabelas {
         this.sismtclienteUsa = sismtclienteUsa;
     }
 
-    public Set<com.testdb.data.SiSisModTabIndex> getSiSisModTabIndexes() {
-        return siSisModTabIndexes;
-    }
-
-    public void setSiSisModTabIndexes(Set<com.testdb.data.SiSisModTabIndex> siSisModTabIndexes) {
-        this.siSisModTabIndexes = siSisModTabIndexes;
-    }
-
     public Set<com.testdb.data.SiSisModTabCampos> getSiSisModTabCamposes() {
         return siSisModTabCamposes;
     }
 
     public void setSiSisModTabCamposes(Set<com.testdb.data.SiSisModTabCampos> siSisModTabCamposes) {
         this.siSisModTabCamposes = siSisModTabCamposes;
+    }
+
+    public Set<com.testdb.data.SiSisModTabIndex> getSiSisModTabIndexes() {
+        return siSisModTabIndexes;
+    }
+
+    public void setSiSisModTabIndexes(Set<com.testdb.data.SiSisModTabIndex> siSisModTabIndexes) {
+        this.siSisModTabIndexes = siSisModTabIndexes;
     }
 
 }

@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  *  testDB.SiSisModulo
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class SiSisModulo {
@@ -16,10 +16,10 @@ public class SiSisModulo {
     private SiSistema siSistema;
     private String simodcod;
     private String simodnome;
-    private Set<com.testdb.data.SiSisModDescrDet> siSisModDescrDets = new HashSet<com.testdb.data.SiSisModDescrDet>();
-    private Set<com.testdb.data.SiSisModComponentes> siSisModComponenteses = new HashSet<com.testdb.data.SiSisModComponentes>();
-    private Set<com.testdb.data.SiCliModulo> siCliModulos = new HashSet<com.testdb.data.SiCliModulo>();
     private Set<com.testdb.data.SiSisModTabelas> siSisModTabelases = new HashSet<com.testdb.data.SiSisModTabelas>();
+    private Set<com.testdb.data.SiSisModDescrDet> siSisModDescrDets = new HashSet<com.testdb.data.SiSisModDescrDet>();
+    private Set<com.testdb.data.SiCliModulo> siCliModulos = new HashSet<com.testdb.data.SiCliModulo>();
+    private Set<com.testdb.data.SiSisModComponentes> siSisModComponenteses = new HashSet<com.testdb.data.SiSisModComponentes>();
 
     public Integer getSimodid() {
         return simodid;
@@ -53,20 +53,20 @@ public class SiSisModulo {
         this.simodnome = simodnome;
     }
 
+    public Set<com.testdb.data.SiSisModTabelas> getSiSisModTabelases() {
+        return siSisModTabelases;
+    }
+
+    public void setSiSisModTabelases(Set<com.testdb.data.SiSisModTabelas> siSisModTabelases) {
+        this.siSisModTabelases = siSisModTabelases;
+    }
+
     public Set<com.testdb.data.SiSisModDescrDet> getSiSisModDescrDets() {
         return siSisModDescrDets;
     }
 
     public void setSiSisModDescrDets(Set<com.testdb.data.SiSisModDescrDet> siSisModDescrDets) {
         this.siSisModDescrDets = siSisModDescrDets;
-    }
-
-    public Set<com.testdb.data.SiSisModComponentes> getSiSisModComponenteses() {
-        return siSisModComponenteses;
-    }
-
-    public void setSiSisModComponenteses(Set<com.testdb.data.SiSisModComponentes> siSisModComponenteses) {
-        this.siSisModComponenteses = siSisModComponenteses;
     }
 
     public Set<com.testdb.data.SiCliModulo> getSiCliModulos() {
@@ -77,12 +77,12 @@ public class SiSisModulo {
         this.siCliModulos = siCliModulos;
     }
 
-    public Set<com.testdb.data.SiSisModTabelas> getSiSisModTabelases() {
-        return siSisModTabelases;
+    public Set<com.testdb.data.SiSisModComponentes> getSiSisModComponenteses() {
+        return siSisModComponenteses;
     }
 
-    public void setSiSisModTabelases(Set<com.testdb.data.SiSisModTabelas> siSisModTabelases) {
-        this.siSisModTabelases = siSisModTabelases;
+    public void setSiSisModComponenteses(Set<com.testdb.data.SiSisModComponentes> siSisModComponenteses) {
+        this.siSisModComponenteses = siSisModComponenteses;
     }
 
 }

@@ -26,11 +26,11 @@ public class reset {
     String newencpass = "NULL"; // new encrypted password for DB
     // Connection to Database
     public Connection connectDB() {
-        String driverclass = "org.postgresql.Driver";
-        String url = "jdbc:postgresql://localhost:5432/postgres";
-        String username = "postgres";
-        String password = "basel1";
-        Connection conn = null;
+        String driverclass="com.mysql.jdbc.Driver";
+        String url="jdbc:mysql://localhost:3306/test";
+        String username="root";
+        String password="root";
+        Connection conn=null;
 
         try {
             Class.forName(driverclass);

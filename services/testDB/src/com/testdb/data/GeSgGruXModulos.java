@@ -5,14 +5,14 @@ package com.testdb.data;
 
 /**
  *  testDB.GeSgGruXModulos
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeSgGruXModulos {
 
     private Integer gesggxmid;
     private GeSgGrupos geSgGrupos;
-    private Integer gesggxmidmod;
+    private SiCliModulo siCliModulo;
 
     public Integer getGesggxmid() {
         return gesggxmid;
@@ -30,12 +30,12 @@ public class GeSgGruXModulos {
         this.geSgGrupos = geSgGrupos;
     }
 
-    public Integer getGesggxmidmod() {
-        return gesggxmidmod;
+    public SiCliModulo getSiCliModulo() {
+        return siCliModulo;
     }
 
-    public void setGesggxmidmod(Integer gesggxmidmod) {
-        this.gesggxmidmod = gesggxmidmod;
+    public void setSiCliModulo(SiCliModulo siCliModulo) {
+        this.siCliModulo = siCliModulo;
     }
 
 }

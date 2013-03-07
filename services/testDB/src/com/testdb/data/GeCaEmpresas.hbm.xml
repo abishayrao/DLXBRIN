@@ -38,6 +38,66 @@
         <many-to-one name="siClientes" class="com.testdb.data.SiClientes">
             <column name="GECAEMPCLIID" not-null="true"/>
         </many-to-one>
+        <set name="geCaEmpCentrocustos" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPCCUEMPRESAID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpCentrocusto"/>
+        </set>
+        <set name="geCaEmpEnds" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPENDEMPRESAID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpEnd"/>
+        </set>
+        <set name="geCaEmpHisPgtos" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPHPIDEMPRESA" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpHisPgto"/>
+        </set>
+        <set name="geCaEmpLotacaos" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPLOTEMPRESAID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpLotacao"/>
+        </set>
+        <set name="geCaEmpCnaeSecs" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPCNSEMPRESAID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpCnaeSec"/>
+        </set>
+        <set name="geCaEmpSocioses" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPSOIDEMPRESA" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpSocios"/>
+        </set>
+        <set name="geCaFuncionarios" inverse="true" cascade="">
+            <key>
+                <column name="GEFUNCIEMPRESAID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaFuncionario"/>
+        </set>
+        <set name="geCaEmpTels" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPTELEMPRESAID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpTel"/>
+        </set>
+        <set name="geCaEmpDocsPjs" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPDPJEMPRESAID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpDocsPj"/>
+        </set>
+        <set name="geCaEmpDocsPfs" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPDPFEMPRESAID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpDocsPf"/>
+        </set>
         <set name="geSgGruXEmpresas" inverse="true" cascade="">
             <key>
                 <column name="GESGGXEIDEmpresa" not-null="true"/>
@@ -50,77 +110,17 @@
             </key>
             <one-to-many class="com.testdb.data.GeCaEmpContas"/>
         </set>
-        <set name="geCaFuncionarios" inverse="true" cascade="">
-            <key>
-                <column name="GEFUNCIEMPRESAID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaFuncionario"/>
-        </set>
-        <set name="geCaEmpCnaeSecs" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPCNSEMPRESAID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpCnaeSec"/>
-        </set>
-        <set name="geCaEmpLotacaos" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPLOTEMPRESAID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpLotacao"/>
-        </set>
-        <set name="geCaEmpCentrocustos" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPCCUEMPRESAID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpCentrocusto"/>
-        </set>
-        <set name="geCaEmpWebs" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPWEBEMPRESAID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpWeb"/>
-        </set>
-        <set name="geCaEmpEnds" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPENDEMPRESAID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpEnd"/>
-        </set>
-        <set name="geCaEmpDocsPfs" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPDPFEMPRESAID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpDocsPf"/>
-        </set>
-        <set name="geCaEmpSocioses" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPSOIDEMPRESA" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpSocios"/>
-        </set>
         <set name="geCaEmpContatoses" inverse="true" cascade="">
             <key>
                 <column name="GEEMPCOSEMPRESAID" not-null="true"/>
             </key>
             <one-to-many class="com.testdb.data.GeCaEmpContatos"/>
         </set>
-        <set name="geCaEmpDocsPjs" inverse="true" cascade="">
+        <set name="geCaEmpWebs" inverse="true" cascade="">
             <key>
-                <column name="GEEMPDPJEMPRESAID" not-null="true"/>
+                <column name="GEEMPWEBEMPRESAID" not-null="true"/>
             </key>
-            <one-to-many class="com.testdb.data.GeCaEmpDocsPj"/>
-        </set>
-        <set name="geCaEmpTels" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPTELEMPRESAID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpTel"/>
-        </set>
-        <set name="geCaEmpHisPgtos" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPHPIDEMPRESA" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpHisPgto"/>
+            <one-to-many class="com.testdb.data.GeCaEmpWeb"/>
         </set>
     </class>
 </hibernate-mapping>

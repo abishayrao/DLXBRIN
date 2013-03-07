@@ -80,6 +80,18 @@
         <many-to-one name="siSisModulo" class="com.testdb.data.SiSisModulo">
             <column name="SISMCIDMODULO" not-null="true"/>
         </many-to-one>
+        <set name="geSgGruXCompos" inverse="true" cascade="">
+            <key>
+                <column name="GESGGXCIDCompo" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeSgGruXCompo"/>
+        </set>
+        <set name="siSisModCompoHelps" inverse="true" cascade="">
+            <key>
+                <column name="SIMCOHIDCOMPO" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.SiSisModCompoHelp"/>
+        </set>
         <set name="diHlHelpUsus" inverse="true" cascade="">
             <key>
                 <column name="DIHLHLUIDCompo" not-null="true"/>
@@ -97,12 +109,6 @@
                 <column name="SIMVECOMIDCOMPO" not-null="true"/>
             </key>
             <one-to-many class="com.testdb.data.SiSisVerComponentes"/>
-        </set>
-        <set name="siSisModCompoHelps" inverse="true" cascade="">
-            <key>
-                <column name="SIMCOHIDCOMPO" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.SiSisModCompoHelp"/>
         </set>
     </class>
 </hibernate-mapping>

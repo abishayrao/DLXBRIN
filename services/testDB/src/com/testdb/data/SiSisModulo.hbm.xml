@@ -14,17 +14,17 @@
         <many-to-one name="siSistema" class="com.testdb.data.SiSistema">
             <column name="SIMODIDSISTEMA" not-null="true"/>
         </many-to-one>
+        <set name="siSisModTabelases" inverse="true" cascade="">
+            <key>
+                <column name="SISMTIDMODULO" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.SiSisModTabelas"/>
+        </set>
         <set name="siSisModDescrDets" inverse="true" cascade="">
             <key>
                 <column name="SIMODDIDMODULO" not-null="true"/>
             </key>
             <one-to-many class="com.testdb.data.SiSisModDescrDet"/>
-        </set>
-        <set name="siSisModComponenteses" inverse="true" cascade="">
-            <key>
-                <column name="SISMCIDMODULO" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.SiSisModComponentes"/>
         </set>
         <set name="siCliModulos" inverse="true" cascade="">
             <key>
@@ -32,11 +32,11 @@
             </key>
             <one-to-many class="com.testdb.data.SiCliModulo"/>
         </set>
-        <set name="siSisModTabelases" inverse="true" cascade="">
+        <set name="siSisModComponenteses" inverse="true" cascade="">
             <key>
-                <column name="SISMTIDMODULO" not-null="true"/>
+                <column name="SISMCIDMODULO" not-null="true"/>
             </key>
-            <one-to-many class="com.testdb.data.SiSisModTabelas"/>
+            <one-to-many class="com.testdb.data.SiSisModComponentes"/>
         </set>
     </class>
 </hibernate-mapping>

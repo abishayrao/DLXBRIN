@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.StEpFabricantes
- *  02/23/2013 10:50:04
+ *  03/07/2013 22:09:27
  * 
  */
 public class StEpFabricantes {
@@ -22,10 +22,10 @@ public class StEpFabricantes {
     private String stepfastatus;
     private Date stepfainivig;
     private Date stepfafimvig;
+    private Set<com.testdb.data.StEpFabricEnd> stEpFabricEnds = new HashSet<com.testdb.data.StEpFabricEnd>();
     private Set<com.testdb.data.StEpFabricTel> stEpFabricTels = new HashSet<com.testdb.data.StEpFabricTel>();
     private Set<com.testdb.data.StEpFabricContatos> stEpFabricContatoses = new HashSet<com.testdb.data.StEpFabricContatos>();
     private Set<com.testdb.data.StEpFabricWeb> stEpFabricWebs = new HashSet<com.testdb.data.StEpFabricWeb>();
-    private Set<com.testdb.data.StEpFabricEnd> stEpFabricEnds = new HashSet<com.testdb.data.StEpFabricEnd>();
 
     public Integer getStepfaid() {
         return stepfaid;
@@ -99,6 +99,14 @@ public class StEpFabricantes {
         this.stepfafimvig = stepfafimvig;
     }
 
+    public Set<com.testdb.data.StEpFabricEnd> getStEpFabricEnds() {
+        return stEpFabricEnds;
+    }
+
+    public void setStEpFabricEnds(Set<com.testdb.data.StEpFabricEnd> stEpFabricEnds) {
+        this.stEpFabricEnds = stEpFabricEnds;
+    }
+
     public Set<com.testdb.data.StEpFabricTel> getStEpFabricTels() {
         return stEpFabricTels;
     }
@@ -121,14 +129,6 @@ public class StEpFabricantes {
 
     public void setStEpFabricWebs(Set<com.testdb.data.StEpFabricWeb> stEpFabricWebs) {
         this.stEpFabricWebs = stEpFabricWebs;
-    }
-
-    public Set<com.testdb.data.StEpFabricEnd> getStEpFabricEnds() {
-        return stEpFabricEnds;
-    }
-
-    public void setStEpFabricEnds(Set<com.testdb.data.StEpFabricEnd> stEpFabricEnds) {
-        this.stEpFabricEnds = stEpFabricEnds;
     }
 
 }

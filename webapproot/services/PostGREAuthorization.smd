@@ -34,6 +34,11 @@
 		"parameters": null,
 		"returnType": "java.sql.Connection"
 	}, {
+		"name": "designation",
+		"operationType": null,
+		"parameters": null,
+		"returnType": "int"
+	}, {
 		"name": "encrypt",
 		"operationType": null,
 		"parameters": [{
@@ -41,6 +46,11 @@
 			"type": "java.lang.String"
 		}],
 		"returnType": "java.lang.String"
+	}, {
+		"name": "getclientid",
+		"operationType": null,
+		"parameters": null,
+		"returnType": "int"
 	}],
 	"serviceType": "JSON-RPC",
 	"serviceURL": "PostGREAuthorization.json"

@@ -23,6 +23,12 @@
         <many-to-one name="siClientes" class="com.testdb.data.SiClientes">
             <column name="GETIPOENDCLIID" not-null="true"/>
         </many-to-one>
+        <set name="geCaEmpEnds" inverse="true" cascade="">
+            <key>
+                <column name="GEEMPENDTIPOID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeCaEmpEnd"/>
+        </set>
         <set name="siCliEnds" inverse="true" cascade="">
             <key>
                 <column name="SICLIENDTIPOID" not-null="true"/>
@@ -34,12 +40,6 @@
                 <column name="STFAENDTIPOID" not-null="true"/>
             </key>
             <one-to-many class="com.testdb.data.StEpFabricEnd"/>
-        </set>
-        <set name="geCaEmpEnds" inverse="true" cascade="">
-            <key>
-                <column name="GEEMPENDTIPOID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.GeCaEmpEnd"/>
         </set>
     </class>
 </hibernate-mapping>

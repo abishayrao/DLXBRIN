@@ -23,17 +23,17 @@
         <many-to-one name="siClientes" class="com.testdb.data.SiClientes">
             <column name="GETIPOCONCLIID" not-null="true"/>
         </many-to-one>
-        <set name="siCliContases" inverse="true" cascade="">
-            <key>
-                <column name="SICLICTSTIPO" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.SiCliContas"/>
-        </set>
         <set name="geCaEmpContases" inverse="true" cascade="">
             <key>
                 <column name="GEEMPCTSTIPO" not-null="true"/>
             </key>
             <one-to-many class="com.testdb.data.GeCaEmpContas"/>
+        </set>
+        <set name="siCliContases" inverse="true" cascade="">
+            <key>
+                <column name="SICLICTSTIPO" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.SiCliContas"/>
         </set>
     </class>
 </hibernate-mapping>

@@ -27,6 +27,7 @@ wire1: ["wm.Wire", {"expression":undefined,"source":"confirmpassword.dataValue",
 }],
 layoutBox1: ["wm.Layout", {"horizontalAlign":"center","verticalAlign":"middle"}, {}, {
 panel1: ["wm.Panel", {"height":"462px","horizontalAlign":"center","verticalAlign":"middle","width":"700px"}, {}, {
+Home: ["wm.Button", {"caption":"Home","margin":"4"}, {"onclick":"app.LoginpageNavigation"}],
 label1: ["wm.Label", {"align":"center","caption":"Reset your password here!","height":"55px","padding":"4","width":"412px"}, {}],
 currentpassword: ["wm.Text", {"caption":"Current Password","captionSize":"140px","dataValue":undefined,"desktopHeight":"35px","displayValue":"","height":"35px","password":true,"width":"349px"}, {}],
 validuser: ["wm.Label", {"align":"center","height":"35px","padding":"4","showing":false,"width":"348px"}, {}, {

@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeTbTiposEndereco
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeTbTiposEndereco {
@@ -20,9 +20,9 @@ public class GeTbTiposEndereco {
     private String getipoendstatus;
     private Date getipoendinivig;
     private Date getipoendfimvig;
+    private Set<com.testdb.data.GeCaEmpEnd> geCaEmpEnds = new HashSet<com.testdb.data.GeCaEmpEnd>();
     private Set<com.testdb.data.SiCliEnd> siCliEnds = new HashSet<com.testdb.data.SiCliEnd>();
     private Set<com.testdb.data.StEpFabricEnd> stEpFabricEnds = new HashSet<com.testdb.data.StEpFabricEnd>();
-    private Set<com.testdb.data.GeCaEmpEnd> geCaEmpEnds = new HashSet<com.testdb.data.GeCaEmpEnd>();
 
     public Integer getGetipoendid() {
         return getipoendid;
@@ -80,6 +80,14 @@ public class GeTbTiposEndereco {
         this.getipoendfimvig = getipoendfimvig;
     }
 
+    public Set<com.testdb.data.GeCaEmpEnd> getGeCaEmpEnds() {
+        return geCaEmpEnds;
+    }
+
+    public void setGeCaEmpEnds(Set<com.testdb.data.GeCaEmpEnd> geCaEmpEnds) {
+        this.geCaEmpEnds = geCaEmpEnds;
+    }
+
     public Set<com.testdb.data.SiCliEnd> getSiCliEnds() {
         return siCliEnds;
     }
@@ -94,14 +102,6 @@ public class GeTbTiposEndereco {
 
     public void setStEpFabricEnds(Set<com.testdb.data.StEpFabricEnd> stEpFabricEnds) {
         this.stEpFabricEnds = stEpFabricEnds;
-    }
-
-    public Set<com.testdb.data.GeCaEmpEnd> getGeCaEmpEnds() {
-        return geCaEmpEnds;
-    }
-
-    public void setGeCaEmpEnds(Set<com.testdb.data.GeCaEmpEnd> geCaEmpEnds) {
-        this.geCaEmpEnds = geCaEmpEnds;
     }
 
 }

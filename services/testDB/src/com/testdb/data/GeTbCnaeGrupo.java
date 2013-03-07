@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeTbCnaeGrupo
- *  02/23/2013 10:50:04
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeTbCnaeGrupo {

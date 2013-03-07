@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeTbBancos
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeTbBancos {
@@ -20,9 +20,9 @@ public class GeTbBancos {
     private String gebancostatus;
     private Date gebancoinivig;
     private Date gebancofimvig;
-    private Set<com.testdb.data.SiCliContas> siCliContases = new HashSet<com.testdb.data.SiCliContas>();
-    private Set<com.testdb.data.GeCaEmpContas> geCaEmpContases = new HashSet<com.testdb.data.GeCaEmpContas>();
     private Set<com.testdb.data.GeTbBcAgencias> geTbBcAgenciases = new HashSet<com.testdb.data.GeTbBcAgencias>();
+    private Set<com.testdb.data.GeCaEmpContas> geCaEmpContases = new HashSet<com.testdb.data.GeCaEmpContas>();
+    private Set<com.testdb.data.SiCliContas> siCliContases = new HashSet<com.testdb.data.SiCliContas>();
 
     public Integer getGebancoid() {
         return gebancoid;
@@ -80,12 +80,12 @@ public class GeTbBancos {
         this.gebancofimvig = gebancofimvig;
     }
 
-    public Set<com.testdb.data.SiCliContas> getSiCliContases() {
-        return siCliContases;
+    public Set<com.testdb.data.GeTbBcAgencias> getGeTbBcAgenciases() {
+        return geTbBcAgenciases;
     }
 
-    public void setSiCliContases(Set<com.testdb.data.SiCliContas> siCliContases) {
-        this.siCliContases = siCliContases;
+    public void setGeTbBcAgenciases(Set<com.testdb.data.GeTbBcAgencias> geTbBcAgenciases) {
+        this.geTbBcAgenciases = geTbBcAgenciases;
     }
 
     public Set<com.testdb.data.GeCaEmpContas> getGeCaEmpContases() {
@@ -96,12 +96,12 @@ public class GeTbBancos {
         this.geCaEmpContases = geCaEmpContases;
     }
 
-    public Set<com.testdb.data.GeTbBcAgencias> getGeTbBcAgenciases() {
-        return geTbBcAgenciases;
+    public Set<com.testdb.data.SiCliContas> getSiCliContases() {
+        return siCliContases;
     }
 
-    public void setGeTbBcAgenciases(Set<com.testdb.data.GeTbBcAgencias> geTbBcAgenciases) {
-        this.geTbBcAgenciases = geTbBcAgenciases;
+    public void setSiCliContases(Set<com.testdb.data.SiCliContas> siCliContases) {
+        this.siCliContases = siCliContases;
     }
 
 }

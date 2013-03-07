@@ -18,9 +18,15 @@
     <operation name="connectDB">
         <return typeRef="java.sql.Connection" isList="false"/>
     </operation>
+    <operation name="designation">
+        <return typeRef="int" isList="false"/>
+    </operation>
     <operation name="encrypt">
         <parameter name="plaintext" typeRef="java.lang.String" isList="false"/>
         <return typeRef="java.lang.String" isList="false"/>
+    </operation>
+    <operation name="getclientid">
+        <return typeRef="int" isList="false"/>
     </operation>
     <dataobjects>
         <dataobject javaType="java.sql.Connection" name="Connection" supportsQuickData="false">

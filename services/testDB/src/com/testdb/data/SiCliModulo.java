@@ -1,11 +1,13 @@
 
 package com.testdb.data;
 
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**
  *  testDB.SiCliModulo
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class SiCliModulo {
@@ -16,6 +18,7 @@ public class SiCliModulo {
     private String sicxmetapa;
     private String sicxmdatalimite;
     private String sicxmstatus;
+    private Set<com.testdb.data.GeSgGruXModulos> geSgGruXModuloses = new HashSet<com.testdb.data.GeSgGruXModulos>();
 
     public Integer getSicxmid() {
         return sicxmid;
@@ -63,6 +66,14 @@ public class SiCliModulo {
 
     public void setSicxmstatus(String sicxmstatus) {
         this.sicxmstatus = sicxmstatus;
+    }
+
+    public Set<com.testdb.data.GeSgGruXModulos> getGeSgGruXModuloses() {
+        return geSgGruXModuloses;
+    }
+
+    public void setGeSgGruXModuloses(Set<com.testdb.data.GeSgGruXModulos> geSgGruXModuloses) {
+        this.geSgGruXModuloses = geSgGruXModuloses;
     }
 
 }

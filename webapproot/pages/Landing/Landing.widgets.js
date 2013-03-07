@@ -18,7 +18,7 @@ Landing.widgets = {
 	}],
 	layoutBox1: ["wm.Layout", {"horizontalAlign":"center","styles":{"backgroundImage":"resources/images/bg/w1.jpg","color":"","backgroundGradient":""},"verticalAlign":"top"}, {}, {
 		panel1: ["wm.Panel", {"height":"48px","horizontalAlign":"right","layoutKind":"left-to-right","verticalAlign":"middle","width":"100%"}, {}, {
-			button1: ["wm.Button", {"caption":"Logout","margin":"4"}, {"onclick":"app.navigationCall1"}]
+			button1: ["wm.Button", {"caption":"Logout","margin":"4"}, {"onclick":"app.LoginpageNavigation"}]
 		}],
 		label1: ["wm.Label", {"align":"center","height":"41px","padding":"4","styles":{"color":"#ffffff"},"width":"404px"}, {}, {
 			binding: ["wm.Binding", {}, {}, {
@@ -30,6 +30,11 @@ Landing.widgets = {
 		panel2: ["wm.Panel", {"height":"182px","horizontalAlign":"center","styles":{"color":"#ffffff"},"verticalAlign":"middle","width":"100%"}, {}, {
 			dojoMenu1: ["wm.DojoMenu", {"_classes":{"domNode":["ClickableDojoMenu"]},"desktopHeight":"100px","enableTouchHeight":true,"fullStructure":[{"label":"Module 1","separator":undefined,"defaultLabel":"Module 1","iconClass":undefined,"imageList":undefined,"idInPage":undefined,"isCheckbox":false,"onClick":undefined,"children":[{"label":undefined,"separator":true,"defaultLabel":"Separator","iconClass":undefined,"imageList":undefined,"idInPage":undefined,"isCheckbox":undefined,"onClick":undefined,"children":[]}]},{"label":"Job Safety","separator":undefined,"defaultLabel":"Job Safety","iconClass":undefined,"imageList":undefined,"idInPage":undefined,"isCheckbox":false,"onClick":"navigationCall2","children":[]}],"height":"100px","localizationStructure":{},"mobileHeight":"100%","openOnHover":true,"styles":{"color":"#ffffff","backgroundColor":"#0c0a0a","fontWeight":"","opacity":"","fontSize":"","backgroundGradient":""},"transparent":false,"vertical":true,"width":"157px"}, {}]
 		}],
-		resetpassword: ["wm.Button", {"caption":"Reset Password","margin":"4","width":"173px"}, {"onclick":"navigationCall1"}]
+		resetpassword: ["wm.Button", {"caption":"Reset Password","margin":"4","width":"173px"}, {"onclick":"navigationCall1"}],
+		ClientID: ["wm.Text", {"caption":"ClientID","desktopHeight":"30px","displayValue":"3","height":"30px"}, {}, {
+			binding: ["wm.Binding", {}, {}, {
+				wire: ["wm.Wire", {"expression":undefined,"source":"app.clientid.dataValue","targetProperty":"dataValue"}, {}]
+			}]
+		}]
 	}]
 }

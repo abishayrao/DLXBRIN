@@ -38,17 +38,17 @@
         <many-to-one name="geSgGrupos" class="com.testdb.data.GeSgGrupos">
             <column name="GESGUsuIDGrupo" not-null="true"/>
         </many-to-one>
-        <set name="diHlHelpUsus" inverse="true" cascade="">
-            <key>
-                <column name="DIHLHLUIDUsu" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.DiHlHelpUsu"/>
-        </set>
         <set name="geSgAuditorias" inverse="true" cascade="">
             <key>
                 <column name="GESGAudUsuID" not-null="true"/>
             </key>
             <one-to-many class="com.testdb.data.GeSgAuditoria"/>
+        </set>
+        <set name="diHlHelpUsus" inverse="true" cascade="">
+            <key>
+                <column name="DIHLHLUIDUsu" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.DiHlHelpUsu"/>
         </set>
         <set name="geSgHistSenhases" inverse="true" cascade="">
             <key>

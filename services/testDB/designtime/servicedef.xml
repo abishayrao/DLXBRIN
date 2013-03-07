@@ -291,8 +291,8 @@
             <element name="geempsovigdesde" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="geempsovigate" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="geempsoobs" typeRef="java.lang.String" isList="false" allowNull="true"/>
-            <element name="geTbUfByGeempsouf" typeRef="com.testdb.data.GeTbUf" isList="false" allowNull="true"/>
             <element name="geTbUfByGeempsorguf" typeRef="com.testdb.data.GeTbUf" isList="false" allowNull="true"/>
+            <element name="geTbUfByGeempsouf" typeRef="com.testdb.data.GeTbUf" isList="false" allowNull="true"/>
             <element name="geTbQualificacaoSoc" typeRef="com.testdb.data.GeTbQualificacaoSoc" isList="false" allowNull="true"/>
             <element name="geCaEmpresas" typeRef="com.testdb.data.GeCaEmpresas" isList="false" allowNull="false"/>
         </dataobject>
@@ -347,20 +347,20 @@
             <element name="gecaempusacc" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="geTbTiposEmpresas" typeRef="com.testdb.data.GeTbTiposEmpresas" isList="false" allowNull="true"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
+            <element name="geCaEmpCentrocustos" typeRef="com.testdb.data.GeCaEmpCentrocusto" isList="true" allowNull="true"/>
+            <element name="geCaEmpEnds" typeRef="com.testdb.data.GeCaEmpEnd" isList="true" allowNull="true"/>
+            <element name="geCaEmpHisPgtos" typeRef="com.testdb.data.GeCaEmpHisPgto" isList="true" allowNull="true"/>
+            <element name="geCaEmpLotacaos" typeRef="com.testdb.data.GeCaEmpLotacao" isList="true" allowNull="true"/>
+            <element name="geCaEmpCnaeSecs" typeRef="com.testdb.data.GeCaEmpCnaeSec" isList="true" allowNull="true"/>
+            <element name="geCaEmpSocioses" typeRef="com.testdb.data.GeCaEmpSocios" isList="true" allowNull="true"/>
+            <element name="geCaFuncionarios" typeRef="com.testdb.data.GeCaFuncionario" isList="true" allowNull="true"/>
+            <element name="geCaEmpTels" typeRef="com.testdb.data.GeCaEmpTel" isList="true" allowNull="true"/>
+            <element name="geCaEmpDocsPjs" typeRef="com.testdb.data.GeCaEmpDocsPj" isList="true" allowNull="true"/>
+            <element name="geCaEmpDocsPfs" typeRef="com.testdb.data.GeCaEmpDocsPf" isList="true" allowNull="true"/>
             <element name="geSgGruXEmpresas" typeRef="com.testdb.data.GeSgGruXEmpresa" isList="true" allowNull="true"/>
             <element name="geCaEmpContases" typeRef="com.testdb.data.GeCaEmpContas" isList="true" allowNull="true"/>
-            <element name="geCaFuncionarios" typeRef="com.testdb.data.GeCaFuncionario" isList="true" allowNull="true"/>
-            <element name="geCaEmpCnaeSecs" typeRef="com.testdb.data.GeCaEmpCnaeSec" isList="true" allowNull="true"/>
-            <element name="geCaEmpLotacaos" typeRef="com.testdb.data.GeCaEmpLotacao" isList="true" allowNull="true"/>
-            <element name="geCaEmpCentrocustos" typeRef="com.testdb.data.GeCaEmpCentrocusto" isList="true" allowNull="true"/>
-            <element name="geCaEmpWebs" typeRef="com.testdb.data.GeCaEmpWeb" isList="true" allowNull="true"/>
-            <element name="geCaEmpEnds" typeRef="com.testdb.data.GeCaEmpEnd" isList="true" allowNull="true"/>
-            <element name="geCaEmpDocsPfs" typeRef="com.testdb.data.GeCaEmpDocsPf" isList="true" allowNull="true"/>
-            <element name="geCaEmpSocioses" typeRef="com.testdb.data.GeCaEmpSocios" isList="true" allowNull="true"/>
             <element name="geCaEmpContatoses" typeRef="com.testdb.data.GeCaEmpContatos" isList="true" allowNull="true"/>
-            <element name="geCaEmpDocsPjs" typeRef="com.testdb.data.GeCaEmpDocsPj" isList="true" allowNull="true"/>
-            <element name="geCaEmpTels" typeRef="com.testdb.data.GeCaEmpTel" isList="true" allowNull="true"/>
-            <element name="geCaEmpHisPgtos" typeRef="com.testdb.data.GeCaEmpHisPgto" isList="true" allowNull="true"/>
+            <element name="geCaEmpWebs" typeRef="com.testdb.data.GeCaEmpWeb" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeCaFuncionario" supportsQuickData="true">
             <element name="gefunciid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -425,12 +425,12 @@
                 <noChange>update</noChange>
                 <exclude>insert</exclude>
             </element>
-            <element name="gesggxcidcompo" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
             <element name="gesggxcacessa" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="gesggxcinclui" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="gesggxcexclui" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="gesggxcaltera" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="gesggxctemCampos" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="siSisModComponentes" typeRef="com.testdb.data.SiSisModComponentes" isList="false" allowNull="false"/>
             <element name="geSgGrupos" typeRef="com.testdb.data.GeSgGrupos" isList="false" allowNull="false"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeSgGruXEmpresa" supportsQuickData="true">
@@ -456,8 +456,8 @@
                 <noChange>update</noChange>
                 <exclude>insert</exclude>
             </element>
-            <element name="gesggxmidmod" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
             <element name="geSgGrupos" typeRef="com.testdb.data.GeSgGrupos" isList="false" allowNull="false"/>
+            <element name="siCliModulo" typeRef="com.testdb.data.SiCliModulo" isList="false" allowNull="false"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeSgGrupos" supportsQuickData="true">
             <element name="gesggrpId" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -474,11 +474,11 @@
             <element name="gesggrpIniVig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="gesggrpFimVig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
-            <element name="geSgGruXCampos" typeRef="com.testdb.data.GeSgGruXCampo" isList="true" allowNull="true"/>
-            <element name="geSgGruXModuloses" typeRef="com.testdb.data.GeSgGruXModulos" isList="true" allowNull="true"/>
             <element name="geSgUsuarioses" typeRef="com.testdb.data.GeSgUsuarios" isList="true" allowNull="true"/>
-            <element name="geSgGruXEmpresas" typeRef="com.testdb.data.GeSgGruXEmpresa" isList="true" allowNull="true"/>
             <element name="geSgGruXCompos" typeRef="com.testdb.data.GeSgGruXCompo" isList="true" allowNull="true"/>
+            <element name="geSgGruXCampos" typeRef="com.testdb.data.GeSgGruXCampo" isList="true" allowNull="true"/>
+            <element name="geSgGruXEmpresas" typeRef="com.testdb.data.GeSgGruXEmpresa" isList="true" allowNull="true"/>
+            <element name="geSgGruXModuloses" typeRef="com.testdb.data.GeSgGruXModulos" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeSgHistSenhas" supportsQuickData="true">
             <element name="gesghsenhaId" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -516,8 +516,8 @@
             <element name="gesgusuIniVig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="gesgusuFimVig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="geSgGrupos" typeRef="com.testdb.data.GeSgGrupos" isList="false" allowNull="false"/>
-            <element name="diHlHelpUsus" typeRef="com.testdb.data.DiHlHelpUsu" isList="true" allowNull="true"/>
             <element name="geSgAuditorias" typeRef="com.testdb.data.GeSgAuditoria" isList="true" allowNull="true"/>
+            <element name="diHlHelpUsus" typeRef="com.testdb.data.DiHlHelpUsu" isList="true" allowNull="true"/>
             <element name="geSgHistSenhases" typeRef="com.testdb.data.GeSgHistSenhas" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeTbBancos" supportsQuickData="true">
@@ -536,9 +536,9 @@
             <element name="gebancoinivig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="gebancofimvig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
-            <element name="siCliContases" typeRef="com.testdb.data.SiCliContas" isList="true" allowNull="true"/>
-            <element name="geCaEmpContases" typeRef="com.testdb.data.GeCaEmpContas" isList="true" allowNull="true"/>
             <element name="geTbBcAgenciases" typeRef="com.testdb.data.GeTbBcAgencias" isList="true" allowNull="true"/>
+            <element name="geCaEmpContases" typeRef="com.testdb.data.GeCaEmpContas" isList="true" allowNull="true"/>
+            <element name="siCliContases" typeRef="com.testdb.data.SiCliContas" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeTbBcAgencias" supportsQuickData="true">
             <element name="geagid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -629,9 +629,9 @@
             </element>
             <element name="gecnaeenome" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="geTbCnaeClasse" typeRef="com.testdb.data.GeTbCnaeClasse" isList="false" allowNull="false"/>
-            <element name="geCaEmpCnaeSecs" typeRef="com.testdb.data.GeCaEmpCnaeSec" isList="true" allowNull="true"/>
             <element name="geCaEmpDocsPjs" typeRef="com.testdb.data.GeCaEmpDocsPj" isList="true" allowNull="true"/>
             <element name="geCaEmpLotacaos" typeRef="com.testdb.data.GeCaEmpLotacao" isList="true" allowNull="true"/>
+            <element name="geCaEmpCnaeSecs" typeRef="com.testdb.data.GeCaEmpCnaeSec" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeTbIndex" supportsQuickData="true">
             <element name="geindexid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -769,8 +769,8 @@
             <element name="getipoconinivig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="getipoconfimvig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
-            <element name="siCliContases" typeRef="com.testdb.data.SiCliContas" isList="true" allowNull="true"/>
             <element name="geCaEmpContases" typeRef="com.testdb.data.GeCaEmpContas" isList="true" allowNull="true"/>
+            <element name="siCliContases" typeRef="com.testdb.data.SiCliContas" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeTbTiposContato" supportsQuickData="true">
             <element name="getipoctoid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -788,8 +788,8 @@
             <element name="getipoctoinivig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="getipoctofimvig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
-            <element name="geCaEmpContatosHists" typeRef="com.testdb.data.GeCaEmpContatosHist" isList="true" allowNull="true"/>
             <element name="siCliContatosHists" typeRef="com.testdb.data.SiCliContatosHist" isList="true" allowNull="true"/>
+            <element name="geCaEmpContatosHists" typeRef="com.testdb.data.GeCaEmpContatosHist" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeTbTiposContrato" supportsQuickData="true">
             <element name="getipoctrid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -859,9 +859,9 @@
             <element name="getipoendinivig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="getipoendfimvig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
+            <element name="geCaEmpEnds" typeRef="com.testdb.data.GeCaEmpEnd" isList="true" allowNull="true"/>
             <element name="siCliEnds" typeRef="com.testdb.data.SiCliEnd" isList="true" allowNull="true"/>
             <element name="stEpFabricEnds" typeRef="com.testdb.data.StEpFabricEnd" isList="true" allowNull="true"/>
-            <element name="geCaEmpEnds" typeRef="com.testdb.data.GeCaEmpEnd" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeTbTiposTelefone" supportsQuickData="true">
             <element name="getipotelid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -879,16 +879,16 @@
             <element name="getipotelinivig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="getipotelfimvig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
-            <element name="stEpFabricContatosesForStfacontelatpid" typeRef="com.testdb.data.StEpFabricContatos" isList="true" allowNull="true"/>
+            <element name="siCliContatosesForSiclicontelatpid" typeRef="com.testdb.data.SiCliContatos" isList="true" allowNull="true"/>
+            <element name="geCaEmpContatosesForGeempcontelbtpid" typeRef="com.testdb.data.GeCaEmpContatos" isList="true" allowNull="true"/>
+            <element name="siCliTels" typeRef="com.testdb.data.SiCliTel" isList="true" allowNull="true"/>
+            <element name="geCaEmpContatosesForGeempcontelatpid" typeRef="com.testdb.data.GeCaEmpContatos" isList="true" allowNull="true"/>
             <element name="siCliContatosesForSiclicontelbtpid" typeRef="com.testdb.data.SiCliContatos" isList="true" allowNull="true"/>
+            <element name="stEpFabricContatosesForStfacontelatpid" typeRef="com.testdb.data.StEpFabricContatos" isList="true" allowNull="true"/>
+            <element name="stEpFabricTels" typeRef="com.testdb.data.StEpFabricTel" isList="true" allowNull="true"/>
+            <element name="geCaEmpTels" typeRef="com.testdb.data.GeCaEmpTel" isList="true" allowNull="true"/>
             <element name="stEpFabricWebs" typeRef="com.testdb.data.StEpFabricWeb" isList="true" allowNull="true"/>
             <element name="stEpFabricContatosesForStfacontelbtpid" typeRef="com.testdb.data.StEpFabricContatos" isList="true" allowNull="true"/>
-            <element name="geCaEmpContatosesForGeempcontelbtpid" typeRef="com.testdb.data.GeCaEmpContatos" isList="true" allowNull="true"/>
-            <element name="stEpFabricTels" typeRef="com.testdb.data.StEpFabricTel" isList="true" allowNull="true"/>
-            <element name="siCliContatosesForSiclicontelatpid" typeRef="com.testdb.data.SiCliContatos" isList="true" allowNull="true"/>
-            <element name="geCaEmpContatosesForGeempcontelatpid" typeRef="com.testdb.data.GeCaEmpContatos" isList="true" allowNull="true"/>
-            <element name="siCliTels" typeRef="com.testdb.data.SiCliTel" isList="true" allowNull="true"/>
-            <element name="geCaEmpTels" typeRef="com.testdb.data.GeCaEmpTel" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeTbTiposWeb" supportsQuickData="true">
             <element name="getipowebid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -906,8 +906,8 @@
             <element name="getipowebinivig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="getipowebfimvig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
-            <element name="geCaEmpWebs" typeRef="com.testdb.data.GeCaEmpWeb" isList="true" allowNull="true"/>
             <element name="siCliWebs" typeRef="com.testdb.data.SiCliWeb" isList="true" allowNull="true"/>
+            <element name="geCaEmpWebs" typeRef="com.testdb.data.GeCaEmpWeb" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.GeTbUf" supportsQuickData="true">
             <element name="geufcid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -925,16 +925,16 @@
             <element name="geufinivig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="geuffimvig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
-            <element name="stEpFabricEnds" typeRef="com.testdb.data.StEpFabricEnd" isList="true" allowNull="true"/>
-            <element name="geCaEmpSociosesForGeempsorguf" typeRef="com.testdb.data.GeCaEmpSocios" isList="true" allowNull="true"/>
-            <element name="geCaEmpLotacaos" typeRef="com.testdb.data.GeCaEmpLotacao" isList="true" allowNull="true"/>
-            <element name="geCaEmpDocsPfsForGeempdpfregprofuf" typeRef="com.testdb.data.GeCaEmpDocsPf" isList="true" allowNull="true"/>
-            <element name="siCliEnds" typeRef="com.testdb.data.SiCliEnd" isList="true" allowNull="true"/>
-            <element name="geCaEmpSociosesForGeempsouf" typeRef="com.testdb.data.GeCaEmpSocios" isList="true" allowNull="true"/>
-            <element name="siCliDocsPfs" typeRef="com.testdb.data.SiCliDocsPf" isList="true" allowNull="true"/>
             <element name="geTbMunicipioses" typeRef="com.testdb.data.GeTbMunicipios" isList="true" allowNull="true"/>
-            <element name="geCaEmpDocsPfsForGeempdpfrguf" typeRef="com.testdb.data.GeCaEmpDocsPf" isList="true" allowNull="true"/>
             <element name="geCaEmpEnds" typeRef="com.testdb.data.GeCaEmpEnd" isList="true" allowNull="true"/>
+            <element name="siCliEnds" typeRef="com.testdb.data.SiCliEnd" isList="true" allowNull="true"/>
+            <element name="geCaEmpDocsPfsForGeempdpfregprofuf" typeRef="com.testdb.data.GeCaEmpDocsPf" isList="true" allowNull="true"/>
+            <element name="geCaEmpDocsPfsForGeempdpfrguf" typeRef="com.testdb.data.GeCaEmpDocsPf" isList="true" allowNull="true"/>
+            <element name="geCaEmpLotacaos" typeRef="com.testdb.data.GeCaEmpLotacao" isList="true" allowNull="true"/>
+            <element name="stEpFabricEnds" typeRef="com.testdb.data.StEpFabricEnd" isList="true" allowNull="true"/>
+            <element name="siCliDocsPfs" typeRef="com.testdb.data.SiCliDocsPf" isList="true" allowNull="true"/>
+            <element name="geCaEmpSociosesForGeempsouf" typeRef="com.testdb.data.GeCaEmpSocios" isList="true" allowNull="true"/>
+            <element name="geCaEmpSociosesForGeempsorguf" typeRef="com.testdb.data.GeCaEmpSocios" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.Selectionandordering" supportsQuickData="true">
             <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -1098,6 +1098,7 @@
             <element name="sicxmstatus" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
             <element name="siSisModulo" typeRef="com.testdb.data.SiSisModulo" isList="false" allowNull="false"/>
+            <element name="geSgGruXModuloses" typeRef="com.testdb.data.GeSgGruXModulos" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.SiCliTel" supportsQuickData="true">
             <element name="siclitelid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -1170,34 +1171,34 @@
             <element name="sicliindicacao" typeRef="java.lang.Integer" isList="false" allowNull="true"/>
             <element name="siclilingua" typeRef="java.lang.String" isList="false" allowNull="true"/>
             <element name="geTbMeiosConhecimento" typeRef="com.testdb.data.GeTbMeiosConhecimento" isList="false" allowNull="true"/>
-            <element name="geSgGruposes" typeRef="com.testdb.data.GeSgGrupos" isList="true" allowNull="true"/>
-            <element name="geCaEmpresases" typeRef="com.testdb.data.GeCaEmpresas" isList="true" allowNull="true"/>
-            <element name="siCliTels" typeRef="com.testdb.data.SiCliTel" isList="true" allowNull="true"/>
-            <element name="siCliEnds" typeRef="com.testdb.data.SiCliEnd" isList="true" allowNull="true"/>
-            <element name="siCliWebs" typeRef="com.testdb.data.SiCliWeb" isList="true" allowNull="true"/>
-            <element name="geTbNatJurClasses" typeRef="com.testdb.data.GeTbNatJurClasse" isList="true" allowNull="true"/>
-            <element name="stEpFabricanteses" typeRef="com.testdb.data.StEpFabricantes" isList="true" allowNull="true"/>
-            <element name="geTbTiposTelefones" typeRef="com.testdb.data.GeTbTiposTelefone" isList="true" allowNull="true"/>
-            <element name="geTbMunicipioses" typeRef="com.testdb.data.GeTbMunicipios" isList="true" allowNull="true"/>
-            <element name="siCliDocsPfs" typeRef="com.testdb.data.SiCliDocsPf" isList="true" allowNull="true"/>
-            <element name="geTbTiposContas" typeRef="com.testdb.data.GeTbTiposConta" isList="true" allowNull="true"/>
-            <element name="geTbIndexes" typeRef="com.testdb.data.GeTbIndex" isList="true" allowNull="true"/>
-            <element name="geTbQualificacaoSocs" typeRef="com.testdb.data.GeTbQualificacaoSoc" isList="true" allowNull="true"/>
-            <element name="siCliContases" typeRef="com.testdb.data.SiCliContas" isList="true" allowNull="true"/>
-            <element name="geTbBancoses" typeRef="com.testdb.data.GeTbBancos" isList="true" allowNull="true"/>
-            <element name="siCliDocsPjs" typeRef="com.testdb.data.SiCliDocsPj" isList="true" allowNull="true"/>
             <element name="siCliModulos" typeRef="com.testdb.data.SiCliModulo" isList="true" allowNull="true"/>
-            <element name="geTbTiposEmpresases" typeRef="com.testdb.data.GeTbTiposEmpresas" isList="true" allowNull="true"/>
-            <element name="geTbTiposContatos" typeRef="com.testdb.data.GeTbTiposContato" isList="true" allowNull="true"/>
+            <element name="geTbQualificacaoSocs" typeRef="com.testdb.data.GeTbQualificacaoSoc" isList="true" allowNull="true"/>
+            <element name="geTbUfs" typeRef="com.testdb.data.GeTbUf" isList="true" allowNull="true"/>
+            <element name="siCliValoreses" typeRef="com.testdb.data.SiCliValores" isList="true" allowNull="true"/>
             <element name="geTbTiposEnderecos" typeRef="com.testdb.data.GeTbTiposEndereco" isList="true" allowNull="true"/>
-            <element name="siCliHisPgtos" typeRef="com.testdb.data.SiCliHisPgto" isList="true" allowNull="true"/>
+            <element name="siCliTels" typeRef="com.testdb.data.SiCliTel" isList="true" allowNull="true"/>
+            <element name="geTbTiposContas" typeRef="com.testdb.data.GeTbTiposConta" isList="true" allowNull="true"/>
+            <element name="siCliWebs" typeRef="com.testdb.data.SiCliWeb" isList="true" allowNull="true"/>
+            <element name="geTbBancoses" typeRef="com.testdb.data.GeTbBancos" isList="true" allowNull="true"/>
+            <element name="stEpCategFabrs" typeRef="com.testdb.data.StEpCategFabr" isList="true" allowNull="true"/>
+            <element name="geTbTiposContatos" typeRef="com.testdb.data.GeTbTiposContato" isList="true" allowNull="true"/>
+            <element name="geSgGruposes" typeRef="com.testdb.data.GeSgGrupos" isList="true" allowNull="true"/>
+            <element name="geTbTiposTelefones" typeRef="com.testdb.data.GeTbTiposTelefone" isList="true" allowNull="true"/>
+            <element name="siCliDocsPfs" typeRef="com.testdb.data.SiCliDocsPf" isList="true" allowNull="true"/>
+            <element name="stEpFabricanteses" typeRef="com.testdb.data.StEpFabricantes" isList="true" allowNull="true"/>
+            <element name="geTbTiposEmpresases" typeRef="com.testdb.data.GeTbTiposEmpresas" isList="true" allowNull="true"/>
             <element name="geTbTiposContratos" typeRef="com.testdb.data.GeTbTiposContrato" isList="true" allowNull="true"/>
+            <element name="geTbIndexes" typeRef="com.testdb.data.GeTbIndex" isList="true" allowNull="true"/>
+            <element name="geCaEmpresases" typeRef="com.testdb.data.GeCaEmpresas" isList="true" allowNull="true"/>
+            <element name="siCliDocsPjs" typeRef="com.testdb.data.SiCliDocsPj" isList="true" allowNull="true"/>
+            <element name="siCliContatoses" typeRef="com.testdb.data.SiCliContatos" isList="true" allowNull="true"/>
+            <element name="geTbMunicipioses" typeRef="com.testdb.data.GeTbMunicipios" isList="true" allowNull="true"/>
+            <element name="siCliEnds" typeRef="com.testdb.data.SiCliEnd" isList="true" allowNull="true"/>
+            <element name="geTbNatJurClasses" typeRef="com.testdb.data.GeTbNatJurClasse" isList="true" allowNull="true"/>
+            <element name="siCliContases" typeRef="com.testdb.data.SiCliContas" isList="true" allowNull="true"/>
+            <element name="siCliHisPgtos" typeRef="com.testdb.data.SiCliHisPgto" isList="true" allowNull="true"/>
             <element name="geTbTiposDocs" typeRef="com.testdb.data.GeTbTiposDoc" isList="true" allowNull="true"/>
             <element name="geTbTiposWebs" typeRef="com.testdb.data.GeTbTiposWeb" isList="true" allowNull="true"/>
-            <element name="geTbUfs" typeRef="com.testdb.data.GeTbUf" isList="true" allowNull="true"/>
-            <element name="stEpCategFabrs" typeRef="com.testdb.data.StEpCategFabr" isList="true" allowNull="true"/>
-            <element name="siCliContatoses" typeRef="com.testdb.data.SiCliContatos" isList="true" allowNull="true"/>
-            <element name="siCliValoreses" typeRef="com.testdb.data.SiCliValores" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.SiProduto" supportsQuickData="true">
             <element name="siproid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -1296,10 +1297,11 @@
             <element name="sismcdatadvlfim" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="sismcdescricao" typeRef="java.lang.String" isList="false" allowNull="true"/>
             <element name="siSisModulo" typeRef="com.testdb.data.SiSisModulo" isList="false" allowNull="false"/>
+            <element name="geSgGruXCompos" typeRef="com.testdb.data.GeSgGruXCompo" isList="true" allowNull="true"/>
+            <element name="siSisModCompoHelps" typeRef="com.testdb.data.SiSisModCompoHelp" isList="true" allowNull="true"/>
             <element name="diHlHelpUsus" typeRef="com.testdb.data.DiHlHelpUsu" isList="true" allowNull="true"/>
             <element name="siSisModCompCamposes" typeRef="com.testdb.data.SiSisModCompCampos" isList="true" allowNull="true"/>
             <element name="siSisVerComponenteses" typeRef="com.testdb.data.SiSisVerComponentes" isList="true" allowNull="true"/>
-            <element name="siSisModCompoHelps" typeRef="com.testdb.data.SiSisModCompoHelp" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.SiSisModDescrDet" supportsQuickData="true">
             <element name="simoddid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -1369,8 +1371,8 @@
             <element name="sismtdadosIni" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="sismtclienteUsa" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="siSisModulo" typeRef="com.testdb.data.SiSisModulo" isList="false" allowNull="false"/>
-            <element name="siSisModTabIndexes" typeRef="com.testdb.data.SiSisModTabIndex" isList="true" allowNull="true"/>
             <element name="siSisModTabCamposes" typeRef="com.testdb.data.SiSisModTabCampos" isList="true" allowNull="true"/>
+            <element name="siSisModTabIndexes" typeRef="com.testdb.data.SiSisModTabIndex" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.SiSisModulo" supportsQuickData="true">
             <element name="simodid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -1385,10 +1387,10 @@
             <element name="simodcod" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="simodnome" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="siSistema" typeRef="com.testdb.data.SiSistema" isList="false" allowNull="false"/>
-            <element name="siSisModDescrDets" typeRef="com.testdb.data.SiSisModDescrDet" isList="true" allowNull="true"/>
-            <element name="siSisModComponenteses" typeRef="com.testdb.data.SiSisModComponentes" isList="true" allowNull="true"/>
-            <element name="siCliModulos" typeRef="com.testdb.data.SiCliModulo" isList="true" allowNull="true"/>
             <element name="siSisModTabelases" typeRef="com.testdb.data.SiSisModTabelas" isList="true" allowNull="true"/>
+            <element name="siSisModDescrDets" typeRef="com.testdb.data.SiSisModDescrDet" isList="true" allowNull="true"/>
+            <element name="siCliModulos" typeRef="com.testdb.data.SiCliModulo" isList="true" allowNull="true"/>
+            <element name="siSisModComponenteses" typeRef="com.testdb.data.SiSisModComponentes" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.SiSisVerComponentes" supportsQuickData="true">
             <element name="simvecomid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -1438,8 +1440,8 @@
             <element name="sisisinivig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="sisisfimvig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="siProduto" typeRef="com.testdb.data.SiProduto" isList="false" allowNull="false"/>
-            <element name="siSisVersaos" typeRef="com.testdb.data.SiSisVersao" isList="true" allowNull="true"/>
             <element name="siSisModulos" typeRef="com.testdb.data.SiSisModulo" isList="true" allowNull="true"/>
+            <element name="siSisVersaos" typeRef="com.testdb.data.SiSisVersao" isList="true" allowNull="true"/>
         </dataobject>
         <dataobject javaType="com.testdb.data.StEpCategFabr" supportsQuickData="true">
             <element name="stepcfid" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -1549,10 +1551,10 @@
             <element name="stepfafimvig" typeRef="java.util.Date" isList="false" allowNull="true"/>
             <element name="stEpCategFabr" typeRef="com.testdb.data.StEpCategFabr" isList="false" allowNull="false"/>
             <element name="siClientes" typeRef="com.testdb.data.SiClientes" isList="false" allowNull="false"/>
+            <element name="stEpFabricEnds" typeRef="com.testdb.data.StEpFabricEnd" isList="true" allowNull="true"/>
             <element name="stEpFabricTels" typeRef="com.testdb.data.StEpFabricTel" isList="true" allowNull="true"/>
             <element name="stEpFabricContatoses" typeRef="com.testdb.data.StEpFabricContatos" isList="true" allowNull="true"/>
             <element name="stEpFabricWebs" typeRef="com.testdb.data.StEpFabricWeb" isList="true" allowNull="true"/>
-            <element name="stEpFabricEnds" typeRef="com.testdb.data.StEpFabricEnd" isList="true" allowNull="true"/>
         </dataobject>
     </dataobjects>
 </service>

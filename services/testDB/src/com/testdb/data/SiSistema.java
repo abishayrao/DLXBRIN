@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.SiSistema
- *  02/23/2013 10:50:04
+ *  03/07/2013 22:09:27
  * 
  */
 public class SiSistema {
@@ -21,8 +21,8 @@ public class SiSistema {
     private String sisisstatus;
     private Date sisisinivig;
     private Date sisisfimvig;
-    private Set<com.testdb.data.SiSisVersao> siSisVersaos = new HashSet<com.testdb.data.SiSisVersao>();
     private Set<com.testdb.data.SiSisModulo> siSisModulos = new HashSet<com.testdb.data.SiSisModulo>();
+    private Set<com.testdb.data.SiSisVersao> siSisVersaos = new HashSet<com.testdb.data.SiSisVersao>();
 
     public Integer getSisisid() {
         return sisisid;
@@ -88,20 +88,20 @@ public class SiSistema {
         this.sisisfimvig = sisisfimvig;
     }
 
-    public Set<com.testdb.data.SiSisVersao> getSiSisVersaos() {
-        return siSisVersaos;
-    }
-
-    public void setSiSisVersaos(Set<com.testdb.data.SiSisVersao> siSisVersaos) {
-        this.siSisVersaos = siSisVersaos;
-    }
-
     public Set<com.testdb.data.SiSisModulo> getSiSisModulos() {
         return siSisModulos;
     }
 
     public void setSiSisModulos(Set<com.testdb.data.SiSisModulo> siSisModulos) {
         this.siSisModulos = siSisModulos;
+    }
+
+    public Set<com.testdb.data.SiSisVersao> getSiSisVersaos() {
+        return siSisVersaos;
+    }
+
+    public void setSiSisVersaos(Set<com.testdb.data.SiSisVersao> siSisVersaos) {
+        this.siSisVersaos = siSisVersaos;
     }
 
 }

@@ -20,5 +20,11 @@
         <many-to-one name="siSisModulo" class="com.testdb.data.SiSisModulo">
             <column name="SICXMIDMODULO" not-null="true"/>
         </many-to-one>
+        <set name="geSgGruXModuloses" inverse="true" cascade="">
+            <key>
+                <column name="GESGGXMIDMod" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.GeSgGruXModulos"/>
+        </set>
     </class>
 </hibernate-mapping>

@@ -23,11 +23,11 @@
         <many-to-one name="siClientes" class="com.testdb.data.SiClientes">
             <column name="GEBANCOCLIENTEID" not-null="true"/>
         </many-to-one>
-        <set name="siCliContases" inverse="true" cascade="">
+        <set name="geTbBcAgenciases" inverse="true" cascade="">
             <key>
-                <column name="SICLICTSBANCOID" not-null="true"/>
+                <column name="geagbancoid" not-null="true"/>
             </key>
-            <one-to-many class="com.testdb.data.SiCliContas"/>
+            <one-to-many class="com.testdb.data.GeTbBcAgencias"/>
         </set>
         <set name="geCaEmpContases" inverse="true" cascade="">
             <key>
@@ -35,11 +35,11 @@
             </key>
             <one-to-many class="com.testdb.data.GeCaEmpContas"/>
         </set>
-        <set name="geTbBcAgenciases" inverse="true" cascade="">
+        <set name="siCliContases" inverse="true" cascade="">
             <key>
-                <column name="geagbancoid" not-null="true"/>
+                <column name="SICLICTSBANCOID" not-null="true"/>
             </key>
-            <one-to-many class="com.testdb.data.GeTbBcAgencias"/>
+            <one-to-many class="com.testdb.data.SiCliContas"/>
         </set>
     </class>
 </hibernate-mapping>

@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeTbCnaeSubclasse
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeTbCnaeSubclasse {
@@ -15,9 +15,9 @@ public class GeTbCnaeSubclasse {
     private String gecnaeecod;
     private GeTbCnaeClasse geTbCnaeClasse;
     private String gecnaeenome;
-    private Set<com.testdb.data.GeCaEmpCnaeSec> geCaEmpCnaeSecs = new HashSet<com.testdb.data.GeCaEmpCnaeSec>();
     private Set<com.testdb.data.GeCaEmpDocsPj> geCaEmpDocsPjs = new HashSet<com.testdb.data.GeCaEmpDocsPj>();
     private Set<com.testdb.data.GeCaEmpLotacao> geCaEmpLotacaos = new HashSet<com.testdb.data.GeCaEmpLotacao>();
+    private Set<com.testdb.data.GeCaEmpCnaeSec> geCaEmpCnaeSecs = new HashSet<com.testdb.data.GeCaEmpCnaeSec>();
 
     public String getGecnaeecod() {
         return gecnaeecod;
@@ -43,14 +43,6 @@ public class GeTbCnaeSubclasse {
         this.gecnaeenome = gecnaeenome;
     }
 
-    public Set<com.testdb.data.GeCaEmpCnaeSec> getGeCaEmpCnaeSecs() {
-        return geCaEmpCnaeSecs;
-    }
-
-    public void setGeCaEmpCnaeSecs(Set<com.testdb.data.GeCaEmpCnaeSec> geCaEmpCnaeSecs) {
-        this.geCaEmpCnaeSecs = geCaEmpCnaeSecs;
-    }
-
     public Set<com.testdb.data.GeCaEmpDocsPj> getGeCaEmpDocsPjs() {
         return geCaEmpDocsPjs;
     }
@@ -65,6 +57,14 @@ public class GeTbCnaeSubclasse {
 
     public void setGeCaEmpLotacaos(Set<com.testdb.data.GeCaEmpLotacao> geCaEmpLotacaos) {
         this.geCaEmpLotacaos = geCaEmpLotacaos;
+    }
+
+    public Set<com.testdb.data.GeCaEmpCnaeSec> getGeCaEmpCnaeSecs() {
+        return geCaEmpCnaeSecs;
+    }
+
+    public void setGeCaEmpCnaeSecs(Set<com.testdb.data.GeCaEmpCnaeSec> geCaEmpCnaeSecs) {
+        this.geCaEmpCnaeSecs = geCaEmpCnaeSecs;
     }
 
 }

@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.SiSisModComponentes
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class SiSisModComponentes {
@@ -39,10 +39,11 @@ public class SiSisModComponentes {
     private Date sismcdatadvlini;
     private Date sismcdatadvlfim;
     private String sismcdescricao;
+    private Set<com.testdb.data.GeSgGruXCompo> geSgGruXCompos = new HashSet<com.testdb.data.GeSgGruXCompo>();
+    private Set<com.testdb.data.SiSisModCompoHelp> siSisModCompoHelps = new HashSet<com.testdb.data.SiSisModCompoHelp>();
     private Set<com.testdb.data.DiHlHelpUsu> diHlHelpUsus = new HashSet<com.testdb.data.DiHlHelpUsu>();
     private Set<com.testdb.data.SiSisModCompCampos> siSisModCompCamposes = new HashSet<com.testdb.data.SiSisModCompCampos>();
     private Set<com.testdb.data.SiSisVerComponentes> siSisVerComponenteses = new HashSet<com.testdb.data.SiSisVerComponentes>();
-    private Set<com.testdb.data.SiSisModCompoHelp> siSisModCompoHelps = new HashSet<com.testdb.data.SiSisModCompoHelp>();
 
     public Integer getSismcid() {
         return sismcid;
@@ -252,6 +253,22 @@ public class SiSisModComponentes {
         this.sismcdescricao = sismcdescricao;
     }
 
+    public Set<com.testdb.data.GeSgGruXCompo> getGeSgGruXCompos() {
+        return geSgGruXCompos;
+    }
+
+    public void setGeSgGruXCompos(Set<com.testdb.data.GeSgGruXCompo> geSgGruXCompos) {
+        this.geSgGruXCompos = geSgGruXCompos;
+    }
+
+    public Set<com.testdb.data.SiSisModCompoHelp> getSiSisModCompoHelps() {
+        return siSisModCompoHelps;
+    }
+
+    public void setSiSisModCompoHelps(Set<com.testdb.data.SiSisModCompoHelp> siSisModCompoHelps) {
+        this.siSisModCompoHelps = siSisModCompoHelps;
+    }
+
     public Set<com.testdb.data.DiHlHelpUsu> getDiHlHelpUsus() {
         return diHlHelpUsus;
     }
@@ -274,14 +291,6 @@ public class SiSisModComponentes {
 
     public void setSiSisVerComponenteses(Set<com.testdb.data.SiSisVerComponentes> siSisVerComponenteses) {
         this.siSisVerComponenteses = siSisVerComponenteses;
-    }
-
-    public Set<com.testdb.data.SiSisModCompoHelp> getSiSisModCompoHelps() {
-        return siSisModCompoHelps;
-    }
-
-    public void setSiSisModCompoHelps(Set<com.testdb.data.SiSisModCompoHelp> siSisModCompoHelps) {
-        this.siSisModCompoHelps = siSisModCompoHelps;
     }
 
 }

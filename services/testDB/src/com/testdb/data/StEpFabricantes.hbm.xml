@@ -29,6 +29,12 @@
         <many-to-one name="siClientes" class="com.testdb.data.SiClientes">
             <column name="STEPFACLIENTEID" not-null="true"/>
         </many-to-one>
+        <set name="stEpFabricEnds" inverse="true" cascade="">
+            <key>
+                <column name="STFAENDFABRICANTEID" not-null="true"/>
+            </key>
+            <one-to-many class="com.testdb.data.StEpFabricEnd"/>
+        </set>
         <set name="stEpFabricTels" inverse="true" cascade="">
             <key>
                 <column name="STFATELFABRICANTEID" not-null="true"/>
@@ -46,12 +52,6 @@
                 <column name="STFAWEBFABRICANTEID" not-null="true"/>
             </key>
             <one-to-many class="com.testdb.data.StEpFabricWeb"/>
-        </set>
-        <set name="stEpFabricEnds" inverse="true" cascade="">
-            <key>
-                <column name="STFAENDFABRICANTEID" not-null="true"/>
-            </key>
-            <one-to-many class="com.testdb.data.StEpFabricEnd"/>
         </set>
     </class>
 </hibernate-mapping>

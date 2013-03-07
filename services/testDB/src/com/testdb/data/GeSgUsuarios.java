@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeSgUsuarios
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeSgUsuarios {
@@ -25,8 +25,8 @@ public class GeSgUsuarios {
     private String gesgusuStatus;
     private Date gesgusuIniVig;
     private Date gesgusuFimVig;
-    private Set<com.testdb.data.DiHlHelpUsu> diHlHelpUsus = new HashSet<com.testdb.data.DiHlHelpUsu>();
     private Set<com.testdb.data.GeSgAuditoria> geSgAuditorias = new HashSet<com.testdb.data.GeSgAuditoria>();
+    private Set<com.testdb.data.DiHlHelpUsu> diHlHelpUsus = new HashSet<com.testdb.data.DiHlHelpUsu>();
     private Set<com.testdb.data.GeSgHistSenhas> geSgHistSenhases = new HashSet<com.testdb.data.GeSgHistSenhas>();
 
     public Integer getGesgusuId() {
@@ -125,20 +125,20 @@ public class GeSgUsuarios {
         this.gesgusuFimVig = gesgusuFimVig;
     }
 
-    public Set<com.testdb.data.DiHlHelpUsu> getDiHlHelpUsus() {
-        return diHlHelpUsus;
-    }
-
-    public void setDiHlHelpUsus(Set<com.testdb.data.DiHlHelpUsu> diHlHelpUsus) {
-        this.diHlHelpUsus = diHlHelpUsus;
-    }
-
     public Set<com.testdb.data.GeSgAuditoria> getGeSgAuditorias() {
         return geSgAuditorias;
     }
 
     public void setGeSgAuditorias(Set<com.testdb.data.GeSgAuditoria> geSgAuditorias) {
         this.geSgAuditorias = geSgAuditorias;
+    }
+
+    public Set<com.testdb.data.DiHlHelpUsu> getDiHlHelpUsus() {
+        return diHlHelpUsus;
+    }
+
+    public void setDiHlHelpUsus(Set<com.testdb.data.DiHlHelpUsu> diHlHelpUsus) {
+        this.diHlHelpUsus = diHlHelpUsus;
     }
 
     public Set<com.testdb.data.GeSgHistSenhas> getGeSgHistSenhases() {

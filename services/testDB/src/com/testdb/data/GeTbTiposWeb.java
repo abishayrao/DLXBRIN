@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeTbTiposWeb
- *  02/23/2013 10:50:04
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeTbTiposWeb {
@@ -20,8 +20,8 @@ public class GeTbTiposWeb {
     private String getipowebstatus;
     private Date getipowebinivig;
     private Date getipowebfimvig;
-    private Set<com.testdb.data.GeCaEmpWeb> geCaEmpWebs = new HashSet<com.testdb.data.GeCaEmpWeb>();
     private Set<com.testdb.data.SiCliWeb> siCliWebs = new HashSet<com.testdb.data.SiCliWeb>();
+    private Set<com.testdb.data.GeCaEmpWeb> geCaEmpWebs = new HashSet<com.testdb.data.GeCaEmpWeb>();
 
     public Integer getGetipowebid() {
         return getipowebid;
@@ -79,20 +79,20 @@ public class GeTbTiposWeb {
         this.getipowebfimvig = getipowebfimvig;
     }
 
-    public Set<com.testdb.data.GeCaEmpWeb> getGeCaEmpWebs() {
-        return geCaEmpWebs;
-    }
-
-    public void setGeCaEmpWebs(Set<com.testdb.data.GeCaEmpWeb> geCaEmpWebs) {
-        this.geCaEmpWebs = geCaEmpWebs;
-    }
-
     public Set<com.testdb.data.SiCliWeb> getSiCliWebs() {
         return siCliWebs;
     }
 
     public void setSiCliWebs(Set<com.testdb.data.SiCliWeb> siCliWebs) {
         this.siCliWebs = siCliWebs;
+    }
+
+    public Set<com.testdb.data.GeCaEmpWeb> getGeCaEmpWebs() {
+        return geCaEmpWebs;
+    }
+
+    public void setGeCaEmpWebs(Set<com.testdb.data.GeCaEmpWeb> geCaEmpWebs) {
+        this.geCaEmpWebs = geCaEmpWebs;
     }
 
 }

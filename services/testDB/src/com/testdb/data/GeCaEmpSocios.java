@@ -6,14 +6,14 @@ import java.util.Date;
 
 /**
  *  testDB.GeCaEmpSocios
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeCaEmpSocios {
 
     private Integer geempsoid;
-    private com.testdb.data.GeTbUf geTbUfByGeempsouf;
     private com.testdb.data.GeTbUf geTbUfByGeempsorguf;
+    private com.testdb.data.GeTbUf geTbUfByGeempsouf;
     private GeTbQualificacaoSoc geTbQualificacaoSoc;
     private GeCaEmpresas geCaEmpresas;
     private String geempsonome;
@@ -51,20 +51,20 @@ public class GeCaEmpSocios {
         this.geempsoid = geempsoid;
     }
 
-    public com.testdb.data.GeTbUf getGeTbUfByGeempsouf() {
-        return geTbUfByGeempsouf;
-    }
-
-    public void setGeTbUfByGeempsouf(com.testdb.data.GeTbUf geTbUfByGeempsouf) {
-        this.geTbUfByGeempsouf = geTbUfByGeempsouf;
-    }
-
     public com.testdb.data.GeTbUf getGeTbUfByGeempsorguf() {
         return geTbUfByGeempsorguf;
     }
 
     public void setGeTbUfByGeempsorguf(com.testdb.data.GeTbUf geTbUfByGeempsorguf) {
         this.geTbUfByGeempsorguf = geTbUfByGeempsorguf;
+    }
+
+    public com.testdb.data.GeTbUf getGeTbUfByGeempsouf() {
+        return geTbUfByGeempsouf;
+    }
+
+    public void setGeTbUfByGeempsouf(com.testdb.data.GeTbUf geTbUfByGeempsouf) {
+        this.geTbUfByGeempsouf = geTbUfByGeempsouf;
     }
 
     public GeTbQualificacaoSoc getGeTbQualificacaoSoc() {

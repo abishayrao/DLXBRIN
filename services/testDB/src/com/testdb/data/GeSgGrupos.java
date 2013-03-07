@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  *  testDB.GeSgGrupos
- *  02/23/2013 10:50:05
+ *  03/07/2013 22:09:27
  * 
  */
 public class GeSgGrupos {
@@ -19,11 +19,11 @@ public class GeSgGrupos {
     private String gesggrpStatus;
     private Date gesggrpIniVig;
     private Date gesggrpFimVig;
-    private Set<com.testdb.data.GeSgGruXCampo> geSgGruXCampos = new HashSet<com.testdb.data.GeSgGruXCampo>();
-    private Set<com.testdb.data.GeSgGruXModulos> geSgGruXModuloses = new HashSet<com.testdb.data.GeSgGruXModulos>();
     private Set<com.testdb.data.GeSgUsuarios> geSgUsuarioses = new HashSet<com.testdb.data.GeSgUsuarios>();
-    private Set<com.testdb.data.GeSgGruXEmpresa> geSgGruXEmpresas = new HashSet<com.testdb.data.GeSgGruXEmpresa>();
     private Set<com.testdb.data.GeSgGruXCompo> geSgGruXCompos = new HashSet<com.testdb.data.GeSgGruXCompo>();
+    private Set<com.testdb.data.GeSgGruXCampo> geSgGruXCampos = new HashSet<com.testdb.data.GeSgGruXCampo>();
+    private Set<com.testdb.data.GeSgGruXEmpresa> geSgGruXEmpresas = new HashSet<com.testdb.data.GeSgGruXEmpresa>();
+    private Set<com.testdb.data.GeSgGruXModulos> geSgGruXModuloses = new HashSet<com.testdb.data.GeSgGruXModulos>();
 
     public Integer getGesggrpId() {
         return gesggrpId;
@@ -73,28 +73,28 @@ public class GeSgGrupos {
         this.gesggrpFimVig = gesggrpFimVig;
     }
 
-    public Set<com.testdb.data.GeSgGruXCampo> getGeSgGruXCampos() {
-        return geSgGruXCampos;
-    }
-
-    public void setGeSgGruXCampos(Set<com.testdb.data.GeSgGruXCampo> geSgGruXCampos) {
-        this.geSgGruXCampos = geSgGruXCampos;
-    }
-
-    public Set<com.testdb.data.GeSgGruXModulos> getGeSgGruXModuloses() {
-        return geSgGruXModuloses;
-    }
-
-    public void setGeSgGruXModuloses(Set<com.testdb.data.GeSgGruXModulos> geSgGruXModuloses) {
-        this.geSgGruXModuloses = geSgGruXModuloses;
-    }
-
     public Set<com.testdb.data.GeSgUsuarios> getGeSgUsuarioses() {
         return geSgUsuarioses;
     }
 
     public void setGeSgUsuarioses(Set<com.testdb.data.GeSgUsuarios> geSgUsuarioses) {
         this.geSgUsuarioses = geSgUsuarioses;
+    }
+
+    public Set<com.testdb.data.GeSgGruXCompo> getGeSgGruXCompos() {
+        return geSgGruXCompos;
+    }
+
+    public void setGeSgGruXCompos(Set<com.testdb.data.GeSgGruXCompo> geSgGruXCompos) {
+        this.geSgGruXCompos = geSgGruXCompos;
+    }
+
+    public Set<com.testdb.data.GeSgGruXCampo> getGeSgGruXCampos() {
+        return geSgGruXCampos;
+    }
+
+    public void setGeSgGruXCampos(Set<com.testdb.data.GeSgGruXCampo> geSgGruXCampos) {
+        this.geSgGruXCampos = geSgGruXCampos;
     }
 
     public Set<com.testdb.data.GeSgGruXEmpresa> getGeSgGruXEmpresas() {
@@ -105,12 +105,12 @@ public class GeSgGrupos {
         this.geSgGruXEmpresas = geSgGruXEmpresas;
     }
 
-    public Set<com.testdb.data.GeSgGruXCompo> getGeSgGruXCompos() {
-        return geSgGruXCompos;
+    public Set<com.testdb.data.GeSgGruXModulos> getGeSgGruXModuloses() {
+        return geSgGruXModuloses;
     }
 
-    public void setGeSgGruXCompos(Set<com.testdb.data.GeSgGruXCompo> geSgGruXCompos) {
-        this.geSgGruXCompos = geSgGruXCompos;
+    public void setGeSgGruXModuloses(Set<com.testdb.data.GeSgGruXModulos> geSgGruXModuloses) {
+        this.geSgGruXModuloses = geSgGruXModuloses;
     }
 
 }
